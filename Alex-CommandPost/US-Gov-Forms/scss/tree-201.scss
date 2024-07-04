@@ -1,0 +1,236 @@
+:root {
+	--gap-branch: 10px;
+}
+
+.tree {
+	margin: 1rem auto;
+	@media (max-width: 768px) {
+		width: 310px;
+		flex-direction: column;
+		row-gap: var(--gap-branch);
+	}
+	@media (min-width: 768.02px) {
+		width: 700px;
+		flex-wrap: wrap;
+		gap: calc(var(--gap-branch) * 4);
+		align-items: flex-start;
+	}
+	@media (min-width: 950px) {
+		width: 100%;
+	}
+}
+
+.branch {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: var(--gap-branch);
+
+	// .branch_main
+	&_main {
+		@media (min-width: 768.02px) {
+			flex: 1 0 100%;
+		}
+		@media (min-width: 950px) {
+			flex: initial;
+		}
+	}
+
+	// .branch__commanders
+	&__commanders {
+		border: 2px solid black;
+		width: 250px;
+
+		&::after {
+			width: calc(var(--gap-branch) * 2 + 5px);
+			top: 50%;
+			transform: translateX(-100%);
+			left: -1px;
+
+			@media (min-width: 768.02px) {
+				display: none;
+			}
+
+			@media (min-width: 950px) {
+				display: block;
+				bottom: -1px;
+				height: 60px;
+				top: unset;
+				transform: translateY(100%);
+				left: 50%;
+				width: 0;
+			}
+		}
+
+		&::before {
+			display: none;
+		}
+	}
+
+	// .branch_chiefs
+	&_chiefs {
+		@media (min-width: 950px) {
+			order: -1;
+			margin-top: 4rem;
+		}
+
+		//vertical connections
+		&::before {
+			bottom: 50%;
+			top: -67px;
+			transform: translateX(calc(-5px - var(--gap-branch) * 2));
+			left: -1px;
+
+			@media (min-width: 768.02px) {
+				transform: translateX(calc(var(--gap-branch) * 2));
+				right: 0;
+				left: unset;
+				top: -40px;
+			}
+
+			@media (min-width: 950px) {
+				display: none;
+			}
+		}
+
+		//horisontal connections
+		&::after {
+			top: 50%;
+			width: calc(var(--gap-branch) + 5px);
+			transform: translateX(calc(var(--gap-branch) * -1 - 100%));
+			left: -1px;
+
+			@media (min-width: 768.02px) {
+				left: unset;
+				right: 0;
+				transform: translateX(calc(var(--gap-branch) + 100%));
+				width: var(--gap-branch);
+			}
+			@media (min-width: 950px) {
+				width: 154px;
+			}
+		}
+	}
+
+	// .branch__chief
+	&__chief {
+		border: 2px solid black;
+		width: 250px;
+
+		//vertical connections
+		&::before {
+			bottom: calc(var(--gap-branch) * -1);
+			top: calc(var(--gap-branch) * -1);
+			transform: translateX(calc(0px - var(--gap-branch)));
+			left: -1px;
+
+			@media (min-width: 768.02px) {
+				left: unset;
+				right: -1px;
+				transform: translateX(var(--gap-branch));
+			}
+		}
+
+		&:first-child::before {
+			top: 50%;
+		}
+		&:last-child::before {
+			bottom: 50%;
+		}
+
+		//horisontal connections
+		&::after {
+			width: var(--gap-branch);
+			top: 50%;
+			transform: translateX(-100%);
+			left: -1px;
+
+			@media (min-width: 768.02px) {
+				left: unset;
+				right: -1px;
+				transform: translateX(100%);
+			}
+		}
+	}
+
+	// .branch_officers
+	&_officers {
+		@media (min-width: 950px) {
+			margin-top: 4rem;
+		}
+
+		//vertical connections
+		&::before {
+			bottom: 50%;
+			top: -126px;
+			transform: translateX(calc(0px - var(--gap-branch) * 2));
+			left: -1px;
+
+			@media (min-width: 768.02px) {
+				top: -40px;
+				left: 0;
+			}
+			@media (min-width: 950px) {
+				display: none;
+			}
+		}
+
+		//horisontal connections
+		&::after {
+			width: var(--gap-branch);
+			top: 50%;
+			transform: translateX(-200%);
+			left: 0;
+
+			@media (min-width: 950px) {
+				width: 164px;
+				transform: translateX(-100%);
+			}
+		}
+	}
+
+	// .branch__officer
+	&__officer {
+		border: 2px solid black;
+		width: 250px;
+
+		//vertical connections
+		&::before {
+			bottom: calc(var(--gap-branch) * -1);
+			top: calc(var(--gap-branch) * -1);
+			transform: translateX(calc(0px - var(--gap-branch)));
+			left: -1px;
+		}
+
+		&:first-child::before {
+			top: 50%;
+		}
+		&:last-child::before {
+			bottom: 50%;
+		}
+
+		//horisontal connections
+		&::after {
+			width: var(--gap-branch);
+			top: 50%;
+			transform: translateX(-100%);
+			left: -1px;
+		}
+	}
+}
+
+.branch_chiefs,
+.branch_officers,
+.branch__commanders,
+.branch__chief,
+.branch__officer {
+	position: relative;
+
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		outline: solid 1px #000;
+	}
+}

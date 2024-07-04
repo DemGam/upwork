@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Marine Incident Report</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__logo">
+				<img src="img/logo.svg" alt="logo">
+			</div>
+			<div class="header__text">
+				<h1 class="header__title">Marine Incident Report</h1>
+				<div class="header__subtitle">Transport Operations (Marine Safety) Act 1994</div>
+			</div>
+		</header>
+		<p class="head-text">This is the approved form to report a marine incident in Queensland. A ship's master must
+			report a
+			marine incident to a shipping inspector within 48 hours of the incident taking place, except in cases where the
+			ship is lost or presumed lost in which case the incident must be reported by the ship's owner. If the initial
+			report is not in the approved form a further report must be submitted using this form at the earliest opportunity.
+			You should fill in all fields that are applicable. This form, and all supporting documents, should be returned to
+			a Maritime Safety Queensland office, the Queensland Police Service or a Queensland Boating and Fisheries Patrol
+			Office. Penalties apply for failing to report a marine incident.</p>
+
+		<section class="section">
+			<h3 class="section__title">Incident description</h3>
+			<div class="section__body">
+				<div class="chapter">
+					<h4 class="chapter__title">Position of incident</h4>
+					<div class="chapter__body">
+						<div class="col-on-tab gap-2-4 mb-2">
+							<div class="d-flex gap-2-4">
+								<div class="w-88px">
+									<div class="label">Date</div>
+									<div class="bordered d-flex">
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+									</div>
+								</div>
+								<div class="w-88px">
+									<div class="label">Time</div>
+									<div class="bordered d-flex">
+										<input type="text">
+										<div class="radio-circuled">
+											<input id="incident-time-am" type="radio" value="am" name="incident-time">
+											<label for="incident-time-am">am</label>
+											<input id="incident-time-pm" type="radio" value="pm" name="incident-time">
+											<label for="incident-time-pm">pm</label>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="flex_1-1">
+								<div class="label">Body of water/Landmark</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+
+						<div class="d-flex flex-wrap gap-2-4 mb-2">
+							<div>
+								<div class="label"><b>Location</b></div>
+								<div class="d-flex flex-wrap gap-2-4">
+									<input id="location-inland-waters" type="radio" value="Inland waters (non-tidal)" name="location">
+									<label for="location-inland-waters">Inland waters (non-tidal)</label>
+									<input id="location-smooth-waters" type="radio" value="Smooth waters" name="location">
+									<label for="location-smooth-waters">Smooth waters</label>
+									<input id="location-partially-smooth" type="radio" value="Partially smooth waters" name="location">
+									<label for="location-partially-smooth">Partially smooth waters</label>
+									<input id="location-offshore" type="radio" value="Offshore" name="location">
+									<label for="location-offshore">Offshore</label>
+								</div>
+							</div>
+
+							<div class="d-flex gap-2-4">
+								<div class="w-88px">
+									<div class="label">Latitude</div>
+									<div class="bordered">
+										<input type="text">
+									</div>
+								</div>
+								<div class="w-88px">
+									<div class="label">Longitude</div>
+									<div class="bordered">
+										<input type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="chapter mb-2">
+					<h4 class="chapter__title">Type of incident</h4>
+					<div class="chapter__body">
+						<div class="incident-types">
+							<div class="incident-types__col col-incident">
+								<div class="col-incident__head"></div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-capsizing" type="checkbox" value="Capsizing" name="incident-types">
+									<label for="incident-types-capsizing" class="checkbox__label">Capsizing</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-swamping" type="checkbox" value="Swamping" name="incident-types">
+									<label for="incident-types-swamping" class="checkbox__label">Swamping</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-flooding" type="checkbox" value="Flooding" name="incident-types">
+									<label for="incident-types-flooding" class="checkbox__label">Flooding</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-person-overboard" type="checkbox" value="Person overboard"
+										name="incident-types">
+									<label for="incident-types-person-overboard" class="checkbox__label">Person overboard</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-loss-stability" type="checkbox" value="Loss of stability"
+										name="incident-types">
+									<label for="incident-types-loss-stability" class="checkbox__label">Loss of stability</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-fire" type="checkbox" value="Fire" name="incident-types">
+									<label for="incident-types-fire" class="checkbox__label">Fire</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-explosion" type="checkbox" value="Explosion" name="incident-types">
+									<label for="incident-types-explosion" class="checkbox__label">Explosion</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-structural_equipment-failure" type="checkbox"
+										value="Structural/equipment failure" name="incident-types">
+									<label for="incident-types-structural_equipment-failure" class="checkbox__label">Structural/equipment
+										failure</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-ship-loss" type="checkbox" value="Loss of ship" name="incident-types">
+									<label for="incident-types-ship-loss" class="checkbox__label" data-index="1">Loss of ship</label>
+								</div>
+
+							</div>
+
+							<div class="incident-types__col col-incident">
+								<div class="col-incident__head">Collision:</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-collision-between-ships" type="checkbox" value="collision between ships"
+										name="incident-types">
+									<label for="incident-types-collision-between-ships" class="checkbox__label">between ships</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-collision-with-fixed-object" type="checkbox"
+										value="collision with a fixed object" name="incident-types">
+									<label for="incident-types-collision-with-fixed-object" class="checkbox__label">with a fixed
+										object</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-collision-with-floating-object" type="checkbox"
+										value="collision with a floating object" name="incident-types">
+									<label for="incident-types-collision-with-floating-object" class="checkbox__label">with a floating
+										object</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-collision-with-animal" type="checkbox" value="collision with an animal"
+										name="incident-types">
+									<label for="incident-types-collision-with-animal" class="checkbox__label">with an animal</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-collision-with-overhead-obstruction" type="checkbox"
+										value="collision with an overhead obstruction" name="incident-types">
+									<label for="incident-types-collision-with-overhead-obstruction" class="checkbox__label">with an
+										overhead obstruction</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-collision-with-submerged-object" type="checkbox"
+										value="collision with a submerged object" name="incident-types">
+									<label for="incident-types-collision-with-submerged-object" class="checkbox__label">with a submerged
+										object</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-collision-with-wharf" type="checkbox" value="collision with a wharf"
+										name="incident-types">
+									<label for="incident-types-collision-with-wharf" class="checkbox__label">with a wharf</label>
+								</div>
+							</div>
+
+							<div class="incident-types__col col-incident">
+								<div class="col-incident__head">Grounding:</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-grounding-unintentional" type="checkbox" value="grounding unintentional"
+										name="incident-types">
+									<label for="incident-types-grounding-unintentional" class="checkbox__label">unintentional</label>
+								</div>
+								<div class="col-incident__item checkbox mb-2">
+									<input id="incident-types-grounding-intentional" type="checkbox" value="grounding intentional"
+										name="incident-types">
+									<label for="incident-types-grounding-intentional" class="checkbox__label">intentional</label>
+								</div>
+
+								<div class="col-incident__head">Onboard incident:</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-onboard-fall-within-ship" type="checkbox" value="onboard fall within ship"
+										name="incident-types">
+									<label for="incident-types-onboard-fall-within-ship" class="checkbox__label">fall within ship</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-onboard-crushing-or-pinching" type="checkbox"
+										value="onboard crushing or pinching" name="incident-types">
+									<label for="incident-types-onboard-crushing-or-pinching" class="checkbox__label">crushing or
+										pinching</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-onboard-other-onboard-incident" type="checkbox"
+										value="onboard other onboard incident" name="incident-types">
+									<label for="incident-types-onboard-other-onboard-incident" class="checkbox__label">other onboard
+										incident</label>
+								</div>
+							</div>
+
+							<div class="incident-types__col col-incident">
+								<div class="col-incident__head">Other incident:</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-other-person-hit-by-propeller" type="checkbox"
+										value="other person hit by propeller or ship" name="incident-types">
+									<label for="incident-types-other-person-hit-by-propeller" class="checkbox__label">person hit by
+										propeller or ship</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-other-water-skiing-incident" type="checkbox"
+										value="other water skiing incident" name="incident-types">
+									<label for="incident-types-other-water-skiing-incident" class="checkbox__label">water skiing
+										incident</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-other-parasailing-incident" type="checkbox"
+										value="other parasailing incident" name="incident-types">
+									<label for="incident-types-other-parasailing-incident" class="checkbox__label">parasailing
+										incident</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-other-diving-incident" type="checkbox" value="other diving incident"
+										name="incident-types">
+									<label for="incident-types-other-diving-incident" class="checkbox__label">diving incident</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-other-close-call_near-miss" type="checkbox"
+										value="other close call/near miss" name="incident-types">
+									<label for="incident-types-other-close-call_near-miss" class="checkbox__label">close call/near
+										miss</label>
+								</div>
+								<div class="col-incident__item checkbox">
+									<input id="incident-types-other-incident" type="checkbox" value="other incident"
+										name="incident-types">
+									<label for="incident-types-other-incident" class="checkbox__label">other incident caused by the<br>
+										operation of the ship</label>
+								</div>
+
+							</div>
+						</div>
+						<div class="note"><sup>1 </sup>'Loss of ship' should only be selected where the ship has
+							disappeared and the location and circumstances of the loss are unknown. If the ship is an economic
+							write-off this should be check marked as 'Ship lost' below and on the next page.</div>
+					</div>
+				</div>
+
+				<div class="chapter mb-2">
+					<h4 class="chapter__title">Incident Severity Rating</h4>
+					<div class="chapter__body">
+						<div class="severity-rating">
+							<div class="severity-rating__col">
+								<div class="severity-rating__item injury-rating">
+									<div class="injury-rating__text">
+										<div>
+											<input id="injury-rating-fatality" type="checkbox" value="Fatality" name="injury-rating">
+											<label for="injury-rating-fatality" class="checkbox__label">Fatality</label>
+										</div>
+										<div class="injury-rating__label">Number of persons</div>
+									</div>
+									<div class="bordered w-64px">
+										<input type="text">
+									</div>
+								</div>
+							</div>
+							<div class="severity-rating__col">
+								<div class="severity-rating__item injury-rating">
+									<div class="injury-rating__text">
+										<div>
+											<input id="injury-rating-serious-injury" type="checkbox" value="Serious injury"
+												name="injury-rating">
+											<label for="injury-rating-serious-injury" class="checkbox__label" data-index="2">Serious
+												injury</label>
+										</div>
+										<div class="injury-rating__label">Number of persons</div>
+									</div>
+									<div class="bordered w-64px">
+										<input type="text">
+									</div>
+								</div>
+							</div>
+							<div class="severity-rating__col">
+								<div class="severity-rating__item">
+									<div>
+										<input id="severity-rating-ship-lost" type="radio" value="Ship lost" name="severity-rating-ship">
+										<label for="severity-rating-ship-lost" data-index="3">Ship lost</label>
+									</div>
+									<div>
+										<input id="severity-rating-ship-damaged" type="radio" value="Ship damaged"
+											name="severity-rating-ship">
+										<label for="severity-rating-ship-damaged">Ship damaged</label>
+									</div>
+								</div>
+							</div>
+							<div class="severity-rating__col">
+								<div class="severity-rating__item">
+									<div>
+										<input id="severity-rating-property-damage" type="radio" value="Damage to property only"
+											name="severity-rating-ship">
+										<label for="severity-rating-property-damage" data-index="4">Damage to property only</label>
+									</div>
+									<div>
+										<input id="severity-rating-no-damage" type="radio" value="No damage" name="severity-rating-ship">
+										<label for="severity-rating-no-damage">No damage</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex flex-wrap col-gap-4">
+							<div class="note"><sup>2 </sup>Requiring admission to hospital</div>
+							<div class="note"><sup>3 </sup>Economic write-off or not recovered</div>
+							<div class="note"><sup>4 </sup>No damage to any ships</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="chapter">
+					<h4 class="chapter__title">Environmental conditions</h4>
+					<div class="chapter__body">
+						<div class="environment">
+							<div class="environment__weather">
+								<div class="environment__title">Weather</div>
+								<div class="environment__radio">
+									<input id="environment-weather-clear" type="radio" value="Clear" name="environment-weather">
+									<label for="environment-weather-clear">Clear</label>
+									<input id="environment-weather-hazy" type="radio" value="Hazy" name="environment-weather">
+									<label for="environment-weather-hazy">Hazy</label>
+									<input id="environment-weather-cloudy" type="radio" value="Cloudy" name="environment-weather">
+									<label for="environment-weather-cloudy">Cloudy</label>
+									<input id="environment-weather-rain" type="radio" value="Rain" name="environment-weather">
+									<label for="environment-weather-rain">Rain</label>
+									<input id="environment-weather-flood" type="radio" value="Flood" name="environment-weather">
+									<label for="environment-weather-flood">Flood</label>
+								</div>
+							</div>
+
+							<div class="environment__visibility">
+								<div class="environment__title">Visibility</div>
+								<div class="environment__radio">
+									<input id="environment-visibility-good" type="radio" value="Good" name="environment-visibility">
+									<label for="environment-visibility-good">Good</label>
+									<input id="environment-visibility-fair" type="radio" value="Fair" name="environment-visibility">
+									<label for="environment-visibility-fair">Fair</label>
+									<input id="environment-visibility-poor" type="radio" value="Poor" name="environment-visibility">
+									<label for="environment-visibility-poor">Poor</label>
+								</div>
+							</div>
+
+							<div class="environment__water">
+								<div class="environment__title">Water conditions</div>
+								<div class="environment__radio">
+									<input id="environment-water-calm" type="radio" value="Calm" name="environment-water">
+									<label for="environment-water-calm">Calm</label>
+									<input id="environment-water-choppy" type="radio" value="Choppy" name="environment-water">
+									<label for="environment-water-choppy">Choppy</label>
+									<input id="environment-water-rough" type="radio" value="Rough" name="environment-water">
+									<label for="environment-water-rough">Rough</label>
+									<input id="environment-water-very-rough" type="radio" value="Very rough" name="environment-water">
+									<label for="environment-water-very-rough">Very rough</label>
+									<input id="environment-water-strong-current" type="radio" value="Strong current or tidal flow"
+										name="environment-water">
+									<label for="environment-water-strong-current">Strong current or tidal flow</label>
+
+									<div class="input__wrapper">
+										<label for="environment-water-swell-height">Swell height (metres)</label>
+										<input type="text" class="w-64px bordered" id="environment-water-swell-height">
+									</div>
+								</div>
+							</div>
+
+							<div class="environment__wind">
+								<div class="environment__title">Wind speed</div>
+								<div class="environment__radio">
+									<input id="environment-wind-none" type="radio" value="None" name="environment-wind">
+									<label for="environment-wind-none">None</label>
+									<input id="environment-wind-light" type="radio" value="Light (1-6kts)" name="environment-wind">
+									<label for="environment-wind-light">Light (1-6kts)</label>
+									<input id="environment-wind-moderate" type="radio" value="Moderate (7-15kts)" name="environment-wind">
+									<label for="environment-wind-moderate">Moderate (7-15kts)</label>
+									<input id="environment-wind-strong" type="radio" value="Strong (16-33kts)" name="environment-wind">
+									<label for="environment-wind-strong">Strong (16-33kts)</label>
+									<input id="environment-wind-gale" type="radio" value="Gale (>33kts)" name="environment-wind">
+									<label for="environment-wind-gale">Gale (>33kts)</label>
+
+									<div class="input__wrapper">
+										<label for="environment-wind-dirrection">Wind coming from</label>
+										<input type="text" class="w-64px bordered" id="environment-wind-dirrection">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h3 class="section__title">Ships involved</h3>
+			<div class="section__body section__body_divided">
+				<div class="ships-involved__head">
+					<div>
+						<label>Number of ships involved</label>
+						<input type="text" class="w-64px bordered">
+					</div>
+					<div class="note"><b>Note:</b> if more than two ships were involved attach details on a separate page.</div>
+				</div>
+				<div class="ships-involved">
+					<div class="ships-involved__own chapter">
+						<div class="ship__name">
+							<div class="chapter__title">Own ship</div>
+							<div class="label">Name of ship</div>
+							<div class="bordered"><input type="text"></div>
+						</div>
+						<div class="ship__registration">
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Official registration number</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Registering authority</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+						<div class="ship__size">
+							<div class="flex_1-3">
+								<div class="label txt-nowrap">Lenght (metres)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-3">
+								<div class="label txt-nowrap">Beam (metres)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-3">
+								<div class="label txt-nowrap">Year built</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+						<div class="ship__people">
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Number of passengers on board</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Number of crew on board</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+
+						<div class="ship__registration-type">
+							<div class="chapter__subtitle">Registration type</div>
+							<div class="ship-reg">
+								<div class="ship-reg__col">
+									<div class="ship-reg__item">
+										<input id="own-ship-reg-type-comm-pass" type="radio" value="Commercial passenger"
+											name="own-ship-reg-type">
+										<label for="own-ship-reg-type-comm-pass">Commercial passenger</label>
+									</div>
+									<div class="ship-reg__item">
+										<input id="own-ship-reg-type-comm-non-pass" type="radio" value="Commercial non-passenger"
+											name="own-ship-reg-type">
+										<label for="own-ship-reg-type-comm-non-pass">Commercial non-passenger</label>
+									</div>
+									<div class="ship-reg__item">
+										<input id="own-ship-reg-type-queensland-reg" type="radio" value="Queensland Regulated ship"
+											name="own-ship-reg-type">
+										<label for="own-ship-reg-type-queensland-reg">Queensland Regulated ship</label>
+									</div>
+								</div>
+								<div class="ship-reg__col">
+									<div class="ship-reg__item">
+										<input id="own-ship-reg-type-comm-fishing" type="radio" value="Commercial fishing"
+											name="own-ship-reg-type">
+										<label for="own-ship-reg-type-comm-fishing">Commercial fishing</label>
+									</div>
+									<div class="ship-reg__item">
+										<input id="own-ship-reg-type-comm-hire-drive" type="radio" value="Commercial hire and drive"
+											name="own-ship-reg-type">
+										<label for="own-ship-reg-type-comm-hire-drive">Commercial hire and drive</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ships-involved__other chapter">
+						<div class="ship__name">
+							<div class="chapter__title">Other ship</div>
+							<div class="label">Name of ship</div>
+							<div class="bordered"><input type="text"></div>
+						</div>
+						<div class="ship__registration">
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Official registration number</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Registering authority</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+						<div class="ship__size">
+							<div class="flex_1-3">
+								<div class="label txt-nowrap">Lenght (metres)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-3">
+								<div class="label txt-nowrap">Beam (metres)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-3">
+								<div class="label txt-nowrap">Year built</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+						<div class="ship__people">
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Number of passengers on board</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Number of crew on board</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+
+						<div class="ship__registration-type">
+							<div class="chapter__subtitle">Registration type</div>
+							<div class="ship-reg">
+								<div class="ship-reg__col">
+									<div class="ship-reg__item">
+										<input id="other-ship-reg-type-comm-pass" type="radio" value="Commercial passenger"
+											name="other-ship-reg-type">
+										<label for="other-ship-reg-type-comm-pass">Commercial passenger</label>
+									</div>
+									<div class="ship-reg__item">
+										<input id="other-ship-reg-type-comm-non-pass" type="radio" value="Commercial non-passenger"
+											name="other-ship-reg-type">
+										<label for="other-ship-reg-type-comm-non-pass">Commercial non-passenger</label>
+									</div>
+									<div class="ship-reg__item">
+										<input id="other-ship-reg-type-queensland-reg" type="radio" value="Queensland Regulated ship"
+											name="other-ship-reg-type">
+										<label for="other-ship-reg-type-queensland-reg">Queensland Regulated ship</label>
+									</div>
+								</div>
+								<div class="ship-reg__col">
+									<div class="ship-reg__item">
+										<input id="other-ship-reg-type-comm-fishing" type="radio" value="Commercial fishing"
+											name="other-ship-reg-type">
+										<label for="other-ship-reg-type-comm-fishing">Commercial fishing</label>
+									</div>
+									<div class="ship-reg__item">
+										<input id="other-ship-reg-type-comm-hire-drive" type="radio" value="Commercial hire and drive"
+											name="other-ship-reg-type">
+										<label for="other-ship-reg-type-comm-hire-drive">Commercial hire and drive</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section__body">
+				<p class="mb-2"><b>Additional information for commercial vessels: </b>Commercial vessels must attach master's
+					and engineer's
+					logs and commercial passenger vessels must also attach a copy of the passenger manifest.</p>
+				<div class="chapter__subtitle">Office use only</div>
+				<div class="d-flex flex-wrap gap-2-4 mb-2">
+					<div class="sign-field">
+						<div class="sign-field__label">File number:</div>
+						<div class="underlined">
+							<input type="text">
+						</div>
+					</div>
+					<div class="sign-field">
+						<div class="sign-field__label">Caseman<br> number:</div>
+						<div class="underlined">
+							<input type="text">
+						</div>
+					</div>
+					<div class="sign-field flex_grow">
+						<div class="sign-field__label">Received by<br> (full name):</div>
+						<div class="underlined flex_grow">
+							<input type="text">
+						</div>
+					</div>
+					<div class="sign-field">
+						<div class="sign-field__label">Received on:</div>
+						<div class="w-88px d-flex">
+							<input type="text" class="date-input" maxlength="2">
+							<span>/</span>
+							<input type="text" class="date-input" maxlength="2">
+							<span>/</span>
+							<input type="text" class="date-input" maxlength="2">
+						</div>
+					</div>
+				</div>
+
+				<footer class="footer">
+					<div class="footer__main">Continued over page...</div>
+					<div class="footer__descr"><span>Page 1 of 4</span><span>TRB Forms Area</span><span>Form F3071 CFD</span>
+						<span>V01 Aug 2016</span>
+					</div>
+				</footer>
+			</div>
+		</section>
+
+		<!-- ========= NEW PAGE ============== -->
+		<div class="page-breaker"></div>
+
+		<section class="section">
+			<h3 class="section__title">Ships involved - continued</h3>
+			<div class="section__body section__body_divided">
+				<div class="ships-involved">
+					<div class="ships-involved__own chapter">
+						<div class="ship__descr">
+							<div class="chapter__title">Own ship</div>
+							<div class="chapter__subtitle">Ship description </div>
+							<div class="descr-ship">
+								<div class="descr-ship__items">
+
+									<div class="descr-ship__item">
+										<input id="own-ship-descr-motorboat" type="radio" value="Motorboat" name="own-ship-description">
+										<label for="own-ship-descr-motorboat">Motorboat</label>
+									</div>
+									<div class="descr-ship__item">
+										<input id="own-ship-descr-pwc" type="radio" value="PWC" name="own-ship-description">
+										<label for="own-ship-descr-pwc">PWC</label>
+									</div>
+									<div class="descr-ship__item">
+										<input id="own-ship-descr-rowing-boat" type="radio" value="Rowing boat" name="own-ship-description">
+										<label for="own-ship-descr-rowing-boat">Rowing boat</label>
+									</div>
+									<div class="descr-ship__item">
+										<input id="own-ship-descr-sailing-boat" type="radio" value="Sailing boat"
+											name="own-ship-description">
+										<label for="own-ship-descr-sailing-boat">Sailing boat</label>
+									</div>
+									<div class="descr-ship__item">
+										<input id="own-ship-descr-house-boat" type="radio" value="House boat" name="own-ship-description">
+										<label for="own-ship-descr-house-boat">House boat</label>
+									</div>
+								</div>
+
+								<div class="descr-ship__item">
+									<input id="own-ship-descr-other" type="radio" value="Other" name="own-ship-description">
+									<label for="own-ship-descr-other" class="describe">Other (describe)</label>
+								</div>
+								<div class="bordered describe">
+									<input type="text">
+								</div>
+							</div>
+						</div>
+
+						<div class="ship__engine">
+							<div class="chapter__subtitle">Engine</div>
+							<div class="engine-ship">
+								<div class="engine-ship__items">
+
+									<div class="engine-ship__item">
+										<input id="own-ship-engine-outboard" type="radio" value="Outboard" name="own-ship-engine">
+										<label for="own-ship-engine-outboard">Outboard</label>
+									</div>
+									<div class="engine-ship__item">
+										<input id="own-ship-engine-petrol" type="radio" value="Inboard (petrol)" name="own-ship-engine">
+										<label for="own-ship-engine-petrol" class="txt-nowrap">Inboard (petrol)</label>
+									</div>
+									<div class="engine-ship__item">
+										<input id="own-ship-engine-none" type="radio" value="none" name="own-ship-engine">
+										<label for="own-ship-engine-none">none</label>
+									</div>
+									<div class="engine-ship__item">
+										<input id="own-ship-engine-inboard_outboard" type="radio" value="Inboard/outboard"
+											name="own-ship-engine">
+										<label for="own-ship-engine-inboard_outboard">Inboard/outboard</label>
+									</div>
+									<div class="engine-ship__item">
+										<input id="own-ship-engine-diesel" type="radio" value="Inboard (diesel)" name="own-ship-engine">
+										<label for="own-ship-engine-diesel" class="txt-nowrap">Inboard (diesel)</label>
+									</div>
+								</div>
+
+								<div class="engine-ship__item">
+									<input id="own-ship-engine-other" type="radio" value="Other" name="own-ship-engine">
+									<label for="own-ship-engine-other" class="describe">Other (describe)</label>
+								</div>
+								<div class="bordered describe">
+									<input type="text">
+								</div>
+								<div class="engine-ship__info">
+									<div class="flex_1-2">
+										<div class="label txt-nowrap">Number of engines</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+									<div class="flex_1-2">
+										<div class="label txt-nowrap">Total engine power</div>
+										<div class="bordered d-flex">
+											<input type="text">
+											<div class="radio-circuled">
+												<input id="own-ship-engine-power-hp" type="radio" value="HP" name="own-ship-engine-power">
+												<label for="own-ship-engine-power-hp">HP</label>
+												<input id="own-ship-engine-power-kw" type="radio" value="KW" name="own-ship-engine-power">
+												<label for="own-ship-engine-power-kw">KW</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ship__hull">
+							<div class="chapter__subtitle">Hull material</div>
+							<div class="hull-ship">
+								<div class="hull-ship__items">
+
+									<div class="hull-ship__item">
+										<input id="own-ship-hull-steel" type="radio" value="Steel" name="own-ship-hull">
+										<label for="own-ship-hull-steel">Steel</label>
+									</div>
+									<div class="hull-ship__item">
+										<input id="own-ship-hull-timber" type="radio" value="Timber" name="own-ship-hull">
+										<label for="own-ship-hull-timber">Timber</label>
+									</div>
+									<div class="hull-ship__item">
+										<input id="own-ship-hull-ferro-cement" type="radio" value="Ferro-cement" name="own-ship-hull">
+										<label for="own-ship-hull-ferro-cement">Ferro-cement</label>
+									</div>
+									<div class="hull-ship__item">
+										<input id="own-ship-hull-marine-alloy" type="radio" value="Marine alloy" name="own-ship-hull">
+										<label for="own-ship-hull-marine-alloy">Marine alloy</label>
+									</div>
+									<div class="hull-ship__item">
+										<input id="own-ship-hull-fibreglass" type="radio" value="Fibreglass/GRP" name="own-ship-hull">
+										<label for="own-ship-hull-fibreglass">Fibreglass/GRP</label>
+									</div>
+								</div>
+
+								<div class="hull-ship__item">
+									<input id="own-ship-hull-other" type="radio" value="Other" name="own-ship-hull">
+									<label for="own-ship-hull-other" class="describe">Other (describe)</label>
+								</div>
+								<div class="bordered describe">
+									<input type="text">
+								</div>
+							</div>
+						</div>
+
+						<div class="ship__damage">
+							<div class="chapter__subtitle">Damage to ship</div>
+							<div class="damage-ship">
+								<div class="damage-ship__col">
+									<div class="damage-ship__item">
+										<input id="own-ship-damage-ship-lost" type="radio" value="Ship lost" name="own-ship-damage">
+										<label for="own-ship-damage-ship-lost">Ship lost</label>
+									</div>
+									<div class="damage-ship__item">
+										<input id="own-ship-damage-major-damage" type="radio" value="Major damage" name="own-ship-damage">
+										<label for="own-ship-damage-major-damage">Major damage<br>(ship unseaworthy)</label>
+									</div>
+								</div>
+
+								<div class="damage-ship__col">
+									<div class="damage-ship__item">
+										<input id="own-ship-damage-ship-moderate-damage" type="radio" value="Moderate damage"
+											name="own-ship-damage">
+										<label for="own-ship-damage-ship-moderate-damage">Moderate damage (damaged<br>ship remains
+											seaworthy)</label>
+									</div>
+									<div class="d-flex col-gap-4">
+										<div class="damage-ship__item">
+											<input id="own-ship-damage-minor-damage" type="radio" value="Minor damage" name="own-ship-damage">
+											<label for="own-ship-damage-minor-damage">Minor damage</label>
+										</div>
+										<div class="damage-ship__item">
+											<input id="own-ship-damage-no-damage" type="radio" value="No damage" name="own-ship-damage">
+											<label for="own-ship-damage-no-damage">No damage</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="ships-involved__other chapter">
+						<div class="ship__descr">
+							<div class="chapter__title">Other ship</div>
+							<div class="chapter__subtitle">Ship description </div>
+							<div class="descr-ship">
+								<div class="descr-ship__items">
+
+									<div class="descr-ship__item">
+										<input id="other-ship-descr-motorboat" type="radio" value="Motorboat" name="other-ship-description">
+										<label for="other-ship-descr-motorboat">Motorboat</label>
+									</div>
+									<div class="descr-ship__item">
+										<input id="other-ship-descr-pwc" type="radio" value="PWC" name="other-ship-description">
+										<label for="other-ship-descr-pwc">PWC</label>
+									</div>
+									<div class="descr-ship__item">
+										<input id="other-ship-descr-rowing-boat" type="radio" value="Rowing boat"
+											name="other-ship-description">
+										<label for="other-ship-descr-rowing-boat">Rowing boat</label>
+									</div>
+									<div class="descr-ship__item">
+										<input id="other-ship-descr-sailing-boat" type="radio" value="Sailing boat"
+											name="other-ship-description">
+										<label for="other-ship-descr-sailing-boat">Sailing boat</label>
+									</div>
+									<div class="descr-ship__item">
+										<input id="other-ship-descr-house-boat" type="radio" value="House boat"
+											name="other-ship-description">
+										<label for="other-ship-descr-house-boat">House boat</label>
+									</div>
+								</div>
+
+								<div class="descr-ship__item">
+									<input id="other-ship-descr-other" type="radio" value="Other" name="other-ship-description">
+									<label for="other-ship-descr-other" class="describe">Other (describe)</label>
+								</div>
+								<div class="bordered describe">
+									<input type="text">
+								</div>
+							</div>
+						</div>
+
+						<div class="ship__engine">
+							<div class="chapter__subtitle">Engine</div>
+							<div class="engine-ship">
+								<div class="engine-ship__items">
+
+									<div class="engine-ship__item">
+										<input id="other-ship-engine-outboard" type="radio" value="Outboard" name="other-ship-engine">
+										<label for="other-ship-engine-outboard">Outboard</label>
+									</div>
+									<div class="engine-ship__item">
+										<input id="other-ship-engine-petrol" type="radio" value="Inboard (petrol)" name="other-ship-engine">
+										<label for="other-ship-engine-petrol" class="txt-nowrap">Inboard (petrol)</label>
+									</div>
+									<div class="engine-ship__item">
+										<input id="other-ship-engine-none" type="radio" value="none" name="other-ship-engine">
+										<label for="other-ship-engine-none">none</label>
+									</div>
+									<div class="engine-ship__item">
+										<input id="other-ship-engine-inboard_outboard" type="radio" value="Inboard/outboard"
+											name="other-ship-engine">
+										<label for="other-ship-engine-inboard_outboard">Inboard/outboard</label>
+									</div>
+									<div class="engine-ship__item">
+										<input id="other-ship-engine-diesel" type="radio" value="Inboard (diesel)" name="other-ship-engine">
+										<label for="other-ship-engine-diesel" class="txt-nowrap">Inboard (diesel)</label>
+									</div>
+								</div>
+
+								<div class="engine-ship__item">
+									<input id="other-ship-engine-other" type="radio" value="Other" name="other-ship-engine">
+									<label for="other-ship-engine-other" class="describe">Other (describe)</label>
+								</div>
+								<div class="bordered describe">
+									<input type="text">
+								</div>
+								<div class="engine-ship__info">
+									<div class="flex_1-2">
+										<div class="label txt-nowrap">Number of engines</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+									<div class="flex_1-2">
+										<div class="label txt-nowrap">Total engine power</div>
+										<div class="bordered d-flex">
+											<input type="text">
+											<div class="radio-circuled">
+												<input id="other-ship-engine-power-hp" type="radio" value="HP" name="other-ship-engine-power">
+												<label for="other-ship-engine-power-hp">HP</label>
+												<input id="other-ship-engine-power-kw" type="radio" value="KW" name="other-ship-engine-power">
+												<label for="other-ship-engine-power-kw">KW</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ship__hull">
+							<div class="chapter__subtitle">Hull material</div>
+							<div class="hull-ship">
+								<div class="hull-ship__items">
+
+									<div class="hull-ship__item">
+										<input id="other-ship-hull-steel" type="radio" value="Steel" name="other-ship-hull">
+										<label for="other-ship-hull-steel">Steel</label>
+									</div>
+									<div class="hull-ship__item">
+										<input id="other-ship-hull-timber" type="radio" value="Timber" name="other-ship-hull">
+										<label for="other-ship-hull-timber">Timber</label>
+									</div>
+									<div class="hull-ship__item">
+										<input id="other-ship-hull-ferro-cement" type="radio" value="Ferro-cement" name="other-ship-hull">
+										<label for="other-ship-hull-ferro-cement">Ferro-cement</label>
+									</div>
+									<div class="hull-ship__item">
+										<input id="other-ship-hull-marine-alloy" type="radio" value="Marine alloy" name="other-ship-hull">
+										<label for="other-ship-hull-marine-alloy">Marine alloy</label>
+									</div>
+									<div class="hull-ship__item">
+										<input id="other-ship-hull-fibreglass" type="radio" value="Fibreglass/GRP" name="other-ship-hull">
+										<label for="other-ship-hull-fibreglass">Fibreglass/GRP</label>
+									</div>
+								</div>
+
+								<div class="hull-ship__item">
+									<input id="other-ship-hull-other" type="radio" value="Other" name="other-ship-hull">
+									<label for="other-ship-hull-other" class="describe">Other (describe)</label>
+								</div>
+								<div class="bordered describe">
+									<input type="text">
+								</div>
+							</div>
+						</div>
+
+						<div class="ship__damage">
+							<div class="chapter__subtitle">Damage to ship</div>
+							<div class="damage-ship">
+								<div class="damage-ship__col">
+									<div class="damage-ship__item">
+										<input id="other-ship-damage-ship-lost" type="radio" value="Ship lost" name="other-ship-damage">
+										<label for="other-ship-damage-ship-lost">Ship lost</label>
+									</div>
+									<div class="damage-ship__item">
+										<input id="other-ship-damage-major-damage" type="radio" value="Major damage"
+											name="other-ship-damage">
+										<label for="other-ship-damage-major-damage">Major damage<br>(ship unseaworthy)</label>
+									</div>
+								</div>
+
+								<div class="damage-ship__col">
+									<div class="damage-ship__item">
+										<input id="other-ship-damage-ship-moderate-damage" type="radio" value="Moderate damage"
+											name="other-ship-damage">
+										<label for="other-ship-damage-ship-moderate-damage">Moderate damage (damaged<br>ship remains
+											seaworthy)</label>
+									</div>
+									<div class="d-flex col-gap-4">
+										<div class="damage-ship__item">
+											<input id="other-ship-damage-minor-damage" type="radio" value="Minor damage"
+												name="other-ship-damage">
+											<label for="other-ship-damage-minor-damage">Minor damage</label>
+										</div>
+										<div class="damage-ship__item">
+											<input id="other-ship-damage-no-damage" type="radio" value="No damage" name="other-ship-damage">
+											<label for="other-ship-damage-no-damage">No damage</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h3 class="section__title">People involved</h3>
+			<div class="section__body section__body_divided">
+				<div class="people-involved">
+					<div class="people-involved__own chapter">
+						<div class="owner">
+							<div class="owner__name">
+								<div class="chapter__title">Own ship</div>
+								<div class="chapter__subtitle">Ship owner's details</div>
+								<div class="label">Owner's name</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="owner__dedicated">
+								<div class="label">Dedicated person ashore/operations manager (commercial&nbsp;only)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="owner__tels">
+								<div class="flex_1-2">
+									<div class="label txt-nowrap">Telephone (business hours)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="flex_1-2">
+									<div class="label txt-nowrap">Telephone (after hours)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+							<div class="owner__address">
+								<div class="label">Address</div>
+								<div class="bordered textarea__wrapper">
+									<textarea rows="2"></textarea>
+								</div>
+							</div>
+							<div class="owner__email">
+								<div class="label">Email address</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+
+						<div class="master">
+							<div class="master__name">
+								<div class="chapter__subtitle">Master's details</div>
+								<div class="label">Master's name</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="d-flex gap-2-4">
+								<div class="master__gender gender">
+									<div class="label">Gender</div>
+									<div class="gender__radio">
+										<input id="own-ship-masters-gender-male" type="radio" value="Male" name="own-ship-masters-gender">
+										<label for="own-ship-masters-gender-male">Male</label>
+										<input id="own-ship-masters-gender-female" type="radio" value="Female"
+											name="own-ship-masters-gender">
+										<label for="own-ship-masters-gender-female">Female</label>
+									</div>
+								</div>
+								<div class="master__b-date w-88px">
+									<div class="label">Date of birth</div>
+									<div class="bordered d-flex">
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+									</div>
+								</div>
+							</div>
+							<div class="master__licence">
+								<div>
+									<div class="label">Licence type and grade (for example, Master 5)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="d-flex gap-2-4">
+									<div class="flex_1-2">
+										<div class="label">Licence number</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+									<div class="flex_1-2">
+										<div class="label">Issuing authority</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+								</div>
+								<div class="d-flex gap-2-4">
+									<div>
+										<div class="label">Issue date</div>
+										<div class="bordered d-flex w-88px">
+											<input type="text" class="date-input" maxlength="2">
+											<span>/</span>
+											<input type="text" class="date-input" maxlength="2">
+											<span>/</span>
+											<input type="text" class="date-input" maxlength="2">
+										</div>
+									</div>
+									<div>
+										<div class="label">Expiry date (if applicable)</div>
+										<div class="bordered d-flex w-88px">
+											<input type="text" class="date-input" maxlength="2">
+											<span>/</span>
+											<input type="text" class="date-input" maxlength="2">
+											<span>/</span>
+											<input type="text" class="date-input" maxlength="2">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="master__tels">
+								<div class="flex_1-2">
+									<div class="label txt-nowrap">Telephone (business hours)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="flex_1-2">
+									<div class="label txt-nowrap">Telephone (after hours)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+							<div class="master__address">
+								<div class="label">Address</div>
+								<div class="bordered textarea__wrapper">
+									<textarea rows="2"></textarea>
+								</div>
+							</div>
+							<div class="master__email">
+								<div class="label">Email address</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="people-involved__other chapter">
+						<div class="owner">
+							<div class="owner__name">
+								<div class="chapter__title">Other ship</div>
+								<div class="chapter__subtitle">Ship owner's details</div>
+								<div class="label">Owner's name</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="owner__dedicated">
+								<div class="label">Dedicated person ashore/operations manager (commercial&nbsp;only)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="owner__tels">
+								<div class="flex_1-2">
+									<div class="label txt-nowrap">Telephone (business hours)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="flex_1-2">
+									<div class="label txt-nowrap">Telephone (after hours)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+							<div class="owner__address">
+								<div class="label">Address</div>
+								<div class="bordered textarea__wrapper">
+									<textarea rows="2"></textarea>
+								</div>
+							</div>
+							<div class="owner__email">
+								<div class="label">Email address</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+
+						<div class="master">
+							<div class="master__name">
+								<div class="chapter__subtitle">Master's details</div>
+								<div class="label">Master's name</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="d-flex gap-2-4">
+								<div class="master__gender gender">
+									<div class="label">Gender</div>
+									<div class="gender__radio">
+										<input id="other-ship-masters-gender-male" type="radio" value="Male"
+											name="other-ship-masters-gender">
+										<label for="other-ship-masters-gender-male">Male</label>
+										<input id="other-ship-masters-gender-female" type="radio" value="Female"
+											name="other-ship-masters-gender">
+										<label for="other-ship-masters-gender-female">Female</label>
+									</div>
+								</div>
+								<div class="master__b-date w-88px">
+									<div class="label">Date of birth</div>
+									<div class="bordered d-flex">
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+									</div>
+								</div>
+							</div>
+							<div class="master__licence">
+								<div>
+									<div class="label">Licence type and grade (for example, Master 5)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="d-flex gap-2-4">
+									<div class="flex_1-2">
+										<div class="label">Licence number</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+									<div class="flex_1-2">
+										<div class="label">Issuing authority</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+								</div>
+								<div class="d-flex gap-2-4">
+									<div>
+										<div class="label">Issue date</div>
+										<div class="bordered d-flex w-88px">
+											<input type="text" class="date-input" maxlength="2">
+											<span>/</span>
+											<input type="text" class="date-input" maxlength="2">
+											<span>/</span>
+											<input type="text" class="date-input" maxlength="2">
+										</div>
+									</div>
+									<div>
+										<div class="label">Expiry date (if applicable)</div>
+										<div class="bordered d-flex w-88px">
+											<input type="text" class="date-input" maxlength="2">
+											<span>/</span>
+											<input type="text" class="date-input" maxlength="2">
+											<span>/</span>
+											<input type="text" class="date-input" maxlength="2">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="master__tels">
+								<div class="flex_1-2">
+									<div class="label txt-nowrap">Telephone (business hours)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="flex_1-2">
+									<div class="label txt-nowrap">Telephone (after hours)</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+							<div class="master__address">
+								<div class="label">Address</div>
+								<div class="bordered textarea__wrapper">
+									<textarea rows="2"></textarea>
+								</div>
+							</div>
+							<div class="master__email">
+								<div class="label">Email address</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section__body">
+					<footer class="footer">
+						<div class="footer__main">Continued over page...</div>
+						<div class="footer__descr"><span>Page 2 of 4</span><span>TRB Forms Area</span><span>Form F3071 CFD</span>
+							<span>V01 Aug 2016</span>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========= NEW PAGE ============== -->
+		<div class="page-breaker"></div>
+
+		<section class="section">
+			<h3 class="section__title">People involved - continued</h3>
+			<div class="section__body section__body_divided">
+				<div class="people-involved">
+					<div class="people-involved__own watchkeeper">
+						<div class="watchkeeper__role role">
+							<div class="chapter__title">Own ship</div>
+							<div class="chapter__subtitle">Watchkeeper/person at the helm</div>
+							<div class="label">Role</div>
+							<div class="role__radio">
+								<input id="own-ship-watchkeeper-role-crewmember" type="radio" value="Crewmember"
+									name="own-ship-watchkeeper-role">
+								<label for="own-ship-watchkeeper-role-crewmember">Crewmember</label>
+								<input id="own-ship-watchkeeper-role-passenger" type="radio" value="Passenger"
+									name="own-ship-watchkeeper-role">
+								<label for="own-ship-watchkeeper-role-passenger">Passenger</label>
+								<input id="own-ship-watchkeeper-role-master" type="radio" value="Master"
+									name="own-ship-watchkeeper-role">
+								<label for="own-ship-watchkeeper-role-master">Master (details as above)</label>
+							</div>
+						</div>
+						<div class="watchkeeper__name">
+							<div class="label">Name</div>
+							<div class="bordered"><input type="text"></div>
+						</div>
+
+						<div class="d-flex gap-2-4">
+							<div class="watchkeeper__gender gender">
+								<div class="label">Gender</div>
+								<div class="gender__radio">
+									<input id="own-ship-watchkeepers-gender-male" type="radio" value="Male"
+										name="own-ship-watchkeepers-gender">
+									<label for="own-ship-watchkeepers-gender-male">Male</label>
+									<input id="own-ship-watchkeepers-gender-female" type="radio" value="Female"
+										name="own-ship-watchkeepers-gender">
+									<label for="own-ship-watchkeepers-gender-female">Female</label>
+								</div>
+							</div>
+							<div class="watchkeeper__b-date w-88px">
+								<div class="label">Date of birth</div>
+								<div class="bordered d-flex">
+									<input type="text" class="date-input" maxlength="2">
+									<span>/</span>
+									<input type="text" class="date-input" maxlength="2">
+									<span>/</span>
+									<input type="text" class="date-input" maxlength="2">
+								</div>
+							</div>
+						</div>
+						<div class="watchkeeper__licence">
+							<div>
+								<div class="label">Licence type and grade (for example, Master 5)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="d-flex gap-2-4">
+								<div class="flex_1-2">
+									<div class="label">Licence number</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="flex_1-2">
+									<div class="label">Issuing authority</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+							<div class="d-flex gap-2-4">
+								<div>
+									<div class="label">Issue date</div>
+									<div class="bordered d-flex w-88px">
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+									</div>
+								</div>
+								<div>
+									<div class="label">Expiry date (if applicable)</div>
+									<div class="bordered d-flex w-88px">
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="watchkeeper__tels">
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Telephone (business hours)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Telephone (after hours)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+						<div class="watchkeeper__address">
+							<div class="label">Address</div>
+							<div class="bordered textarea__wrapper">
+								<textarea rows="2"></textarea>
+							</div>
+						</div>
+						<div class="watchkeeper__email">
+							<div class="label">Email address</div>
+							<div class="bordered"><input type="text"></div>
+						</div>
+					</div>
+
+					<div class="people-involved__other watchkeeper">
+						<div class="watchkeeper__role role">
+							<div class="chapter__title">Own ship</div>
+							<div class="chapter__subtitle">Watchkeeper/person at the helm</div>
+							<div class="label">Role</div>
+							<div class="role__radio">
+								<input id="other-ship-watchkeeper-role-crewmember" type="radio" value="Crewmember"
+									name="other-ship-watchkeeper-role">
+								<label for="other-ship-watchkeeper-role-crewmember">Crewmember</label>
+								<input id="other-ship-watchkeeper-role-passenger" type="radio" value="Passenger"
+									name="other-ship-watchkeeper-role">
+								<label for="other-ship-watchkeeper-role-passenger">Passenger</label>
+								<input id="other-ship-watchkeeper-role-master" type="radio" value="Master"
+									name="other-ship-watchkeeper-role">
+								<label for="other-ship-watchkeeper-role-master">Master (details as above)</label>
+							</div>
+						</div>
+						<div class="watchkeeper__name">
+							<div class="label">Name</div>
+							<div class="bordered"><input type="text"></div>
+						</div>
+
+						<div class="d-flex gap-2-4">
+							<div class="watchkeeper__gender gender">
+								<div class="label">Gender</div>
+								<div class="gender__radio">
+									<input id="other-ship-watchkeepers-gender-male" type="radio" value="Male"
+										name="other-ship-watchkeepers-gender">
+									<label for="other-ship-watchkeepers-gender-male">Male</label>
+									<input id="other-ship-watchkeepers-gender-female" type="radio" value="Female"
+										name="other-ship-watchkeepers-gender">
+									<label for="other-ship-watchkeepers-gender-female">Female</label>
+								</div>
+							</div>
+							<div class="watchkeeper__b-date w-88px">
+								<div class="label">Date of birth</div>
+								<div class="bordered d-flex">
+									<input type="text" class="date-input" maxlength="2">
+									<span>/</span>
+									<input type="text" class="date-input" maxlength="2">
+									<span>/</span>
+									<input type="text" class="date-input" maxlength="2">
+								</div>
+							</div>
+						</div>
+						<div class="watchkeeper__licence">
+							<div>
+								<div class="label">Licence type and grade (for example, Master 5)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="d-flex gap-2-4">
+								<div class="flex_1-2">
+									<div class="label">Licence number</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="flex_1-2">
+									<div class="label">Issuing authority</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+							<div class="d-flex gap-2-4">
+								<div>
+									<div class="label">Issue date</div>
+									<div class="bordered d-flex w-88px">
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+									</div>
+								</div>
+								<div>
+									<div class="label">Expiry date (if applicable)</div>
+									<div class="bordered d-flex w-88px">
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="watchkeeper__tels">
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Telephone (business hours)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="flex_1-2">
+								<div class="label txt-nowrap">Telephone (after hours)</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+						</div>
+						<div class="watchkeeper__address">
+							<div class="label">Address</div>
+							<div class="bordered textarea__wrapper">
+								<textarea rows="2"></textarea>
+							</div>
+						</div>
+						<div class="watchkeeper__email">
+							<div class="label">Email address</div>
+							<div class="bordered"><input type="text"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section__body">
+				<div class="chapter mb-2">
+					<h4 class="chapter__title">Witnesses</h4>
+					<div class="note"><b>Note:</b> attach name and complete contact details of any witnesses to the incident on a
+						separate page.</div>
+				</div>
+				<div class="chapter mb-2">
+					<h4 class="chapter__title">Deceased or injured person</h4>
+					<div class="note"><b>Note:</b> if more than two people deceased or injured attach details on a separate page.
+					</div>
+
+					<div class="casualty">
+						<div class="casualty__col">
+							<div class="casualty__name mb-2">
+								<div class="label">Name</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="d-flex gap-2-4 mb-2">
+								<div class="casualty__gender gender">
+									<div class="label">Gender</div>
+									<div class="gender__radio">
+										<input id="casualty-1-gender-male" type="radio" value="Male" name="casualty-1-gender">
+										<label for="casualty-1-gender-male">Male</label>
+										<input id="casualty-1-gender-female" type="radio" value="Female" name="casualty-1-gender">
+										<label for="casualty-1-gender-female">Female</label>
+									</div>
+								</div>
+								<div class="casualty__b-date w-88px">
+									<div class="label">Date of birth</div>
+									<div class="bordered d-flex">
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+									</div>
+								</div>
+							</div>
+							<div class="casualty__address mb-2">
+								<div class="label">Address</div>
+								<div class="bordered textarea__wrapper">
+									<textarea rows="2"></textarea>
+								</div>
+							</div>
+							<div class="casualty__connection">
+								<div class="casualty__tel">
+									<div class="label">Telephone</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="casualty__mariner">
+									<div class="label">Which ship was this person associated with?</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="casualty__col">
+							<div class="chapter__subtitle">Injury status</div>
+							<div class="injury-status mb-2">
+								<div class="injury-status__radio">
+									<input id="injury-status-casualty-1-fatality" type="radio" value="Fatality"
+										name="injury-status-casualty-1">
+									<label for="injury-status-casualty-1-fatality">Fatality</label>
+									<input id="injury-status-casualty-1-missing-person" type="radio" value="Missing person"
+										name="injury-status-casualty-1">
+									<label for="injury-status-casualty-1-missing-person">Missing person</label>
+									<input id="injury-status-casualty-1-serious-injury" type="radio" value="Serious injury"
+										name="injury-status-casualty-1">
+									<label for="injury-status-casualty-1-serious-injury" data-index="5">Serious injury</label>
+									<input id="injury-status-casualty-1-minor-injury" type="radio" value="Minor injury"
+										name="injury-status-casualty-1">
+									<label for="injury-status-casualty-1-minor-injury">Minor injury</label>
+								</div>
+								<div class="note"><sup>5</sup>A serious injury is defined as one where the injured person was admitted
+									to hospital.
+								</div>
+								<div class="injury-status__info">
+									<div class="flex_1-2">
+										<div class="label">Nature of injury</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+									<div class="flex_1-2">
+										<div class="label">Name of hospital</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="chapter__subtitle">Activity of injured or deceased person</div>
+							<div class="activity">
+								<div class="activity__col">
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-master" type="radio" value="Person in charge (Master)"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-master">Person in charge (Master)</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-helmsman" type="radio" value="Person at helm"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-helmsman">Person at helm</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-crew" type="radio" value="Crew"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-crew">Crew</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-passenger" type="radio" value="Passenger on vessel"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-passenger">Passenger on vessel</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-water-skier" type="radio" value="Water-skier"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-water-skier">Water-skier</label>
+									</div>
+
+								</div>
+								<div class="activity__col flex_grow">
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-surfboard" type="radio" value="Surfboard/surf-ski rider"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-surfboard">Surfboard/surf-ski rider</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-swimmer" type="radio" value="Swimmer"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-swimmer">Swimmer</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-para-flier" type="radio" value="Para-flier"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-para-flier">Para-flier</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-diver" type="radio" value="Diver"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-diver">Diver</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-1-other" type="radio" value="Other"
+											name="activity-person-casualty-1">
+										<label for="activity-person-casualty-1-other">Other</label>
+									</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="chapter mb-4">
+					<h4 class="chapter__title">Deceased or injured person</h4>
+
+					<div class="casualty">
+						<div class="casualty__col">
+							<div class="casualty__name mb-2">
+								<div class="label">Name</div>
+								<div class="bordered"><input type="text"></div>
+							</div>
+							<div class="d-flex gap-2-4 mb-2">
+								<div class="casualty__gender gender">
+									<div class="label">Gender</div>
+									<div class="gender__radio">
+										<input id="casualty-2-gender-male" type="radio" value="Male" name="casualty-2-gender">
+										<label for="casualty-2-gender-male">Male</label>
+										<input id="casualty-2-gender-female" type="radio" value="Female" name="casualty-2-gender">
+										<label for="casualty-2-gender-female">Female</label>
+									</div>
+								</div>
+								<div class="casualty__b-date w-88px">
+									<div class="label">Date of birth</div>
+									<div class="bordered d-flex">
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+										<span>/</span>
+										<input type="text" class="date-input" maxlength="2">
+									</div>
+								</div>
+							</div>
+							<div class="casualty__address mb-2">
+								<div class="label">Address</div>
+								<div class="bordered textarea__wrapper">
+									<textarea rows="2"></textarea>
+								</div>
+							</div>
+							<div class="casualty__connection">
+								<div class="casualty__tel">
+									<div class="label">Telephone</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+								<div class="casualty__mariner">
+									<div class="label">Which ship was this person associated with?</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="casualty__col">
+							<div class="chapter__subtitle">Injury status</div>
+							<div class="injury-status mb-2">
+								<div class="injury-status__radio">
+									<input id="injury-status-casualty-2-fatality" type="radio" value="Fatality"
+										name="injury-status-casualty-2">
+									<label for="injury-status-casualty-2-fatality">Fatality</label>
+									<input id="injury-status-casualty-2-missing-person" type="radio" value="Missing person"
+										name="injury-status-casualty-2">
+									<label for="injury-status-casualty-2-missing-person">Missing person</label>
+									<input id="injury-status-casualty-2-serious-injury" type="radio" value="Serious injury"
+										name="injury-status-casualty-2">
+									<label for="injury-status-casualty-2-serious-injury" data-index="5">Serious injury</label>
+									<input id="injury-status-casualty-2-minor-injury" type="radio" value="Minor injury"
+										name="injury-status-casualty-2">
+									<label for="injury-status-casualty-2-minor-injury">Minor injury</label>
+								</div>
+								<div class="note"><sup>5</sup>A serious injury is defined as one where the injured person was admitted
+									to hospital.
+								</div>
+								<div class="injury-status__info">
+									<div class="flex_1-2">
+										<div class="label">Nature of injury</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+									<div class="flex_1-2">
+										<div class="label">Name of hospital</div>
+										<div class="bordered"><input type="text"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="chapter__subtitle">Activity of injured or deceased person</div>
+							<div class="activity">
+								<div class="activity__col">
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-master" type="radio" value="Person in charge (Master)"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-master">Person in charge (Master)</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-helmsman" type="radio" value="Person at helm"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-helmsman">Person at helm</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-crew" type="radio" value="Crew"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-crew">Crew</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-passenger" type="radio" value="Passenger on vessel"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-passenger">Passenger on vessel</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-water-skier" type="radio" value="Water-skier"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-water-skier">Water-skier</label>
+									</div>
+
+								</div>
+								<div class="activity__col flex_grow">
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-surfboard" type="radio" value="Surfboard/surf-ski rider"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-surfboard">Surfboard/surf-ski rider</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-swimmer" type="radio" value="Swimmer"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-swimmer">Swimmer</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-para-flier" type="radio" value="Para-flier"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-para-flier">Para-flier</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-diver" type="radio" value="Diver"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-diver">Diver</label>
+									</div>
+									<div class="activity__person">
+										<input id="activity-person-casualty-2-other" type="radio" value="Other"
+											name="activity-person-casualty-2">
+										<label for="activity-person-casualty-2-other">Other</label>
+									</div>
+									<div class="bordered"><input type="text"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="privacy"><b>Privacy Statement:</b>
+					The Department of Transport and Main Roads collects information on this form to administer the register of
+					ships under the <i>Transport Operations (Marine Safety) Act</i>. This information may be released by the
+					department
+					to people who have an interest that justifies access to the register, including people proposing to buy,
+					sell,
+					lease or insure the ship and, when relevant, litigants in matters about marine incidents, or the insolvency,
+					or external adminstration, or fraudulent activity of the registered owner, or Family Court matters. Your
+					personal information will not be disclosed to other third parties without your consent unless authorised or
+					required by law.</div>
+
+				<footer class="footer">
+					<div class="footer__main">Continued over page...</div>
+					<div class="footer__descr"><span>Page 3 of 4</span><span>TRB Forms Area</span><span>Form F3071 CFD</span>
+						<span>V01 Aug 2016</span>
+					</div>
+				</footer>
+			</div>
+		</section>
+
+		<!-- ========= NEW PAGE ============== -->
+		<div class="page-breaker"></div>
+
+		<section class="section">
+			<h3 class="section__title mb-2">Report details</h3>
+			<p class="mb-2">A <b>full description</b> (including a diagram or chart extract) of the incident and events
+				leading up to the
+				incident
+				are to be detailed in the space provided below (if insufficient space, please use separate pages, each extra
+				page that is used is to be signed).</p>
+
+			<div class="map">
+				<div class="map__grid"></div>
+			</div>
+
+			<div class="chapter__subtitle">Owner's/Master's report</div>
+			<div class="bordered textarea__wrapper mb-2">
+				<textarea rows="15"></textarea>
+			</div>
+			<div class="chapter__subtitle">Assistance rendered/received at incident</div>
+			<div class="bordered textarea__wrapper mb-2">
+				<textarea rows="3"></textarea>
+			</div>
+
+			<div class="sign-field sign-field_wide mb-2">
+				<div class="sign-field__label"><b>Name, status and phone number of person who<br> assisted in completion of
+						form</b> (if applicable)</div>
+				<div class="underlined underlined_wide flex_grow">
+					<input type="text">
+				</div>
+			</div>
+
+			<div class="sign-wrapper__date">
+				<div class="sign-field sign-field_wide flex_grow">
+					<div class="sign-field__label"><b>Signature</b> (Owner/Master)</div>
+					<div class="underlined underlined_wide flex_grow">
+						<input type="text">
+					</div>
+				</div>
+
+
+				<div class="sign-field flex_grow">
+					<div class="sign-field__label"><b>Date</b></div>
+					<div class="w-88px d-flex">
+						<div class="underlined">
+							<input class="date-input" maxlength="2" type="text">
+						</div>
+						<span>/</span>
+						<div class="underlined">
+							<input class="date-input" maxlength="2" type="text">
+						</div>
+						<span>/</span>
+						<div class="underlined">
+							<input class="date-input" maxlength="2" type="text">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sign-wrapper__owner">
+				<div class="sign-field sign-field_wide flex_grow">
+					<div class="sign-field__label"><b>Owner/Master name</b> (please print)</div>
+					<div class="underlined underlined_wide flex_grow">
+						<input type="text">
+					</div>
+				</div>
+
+				<div class="footer__last">
+					<div class="footer__descr">
+						<span>Form F3071 CFD</span><span>V01 Aug 2016</span>
+					</div>
+					<div class="footer__descr">
+						<span>Page 4 of 4</span><span>TRB Forms Area</span>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+:root {
+  --gap-branch: 10px;
+}
+
+.tree {
+  margin: 1rem auto;
+}
+@media (max-width: 768px) {
+  .tree {
+    width: 310px;
+    flex-direction: column;
+    row-gap: var(--gap-branch);
+  }
+}
+@media (min-width: 768.02px) {
+  .tree {
+    width: 700px;
+    flex-wrap: wrap;
+    gap: calc(var(--gap-branch) * 4);
+    align-items: flex-start;
+  }
+}
+@media (min-width: 950px) {
+  .tree {
+    width: 100%;
+  }
+}
+
+.branch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: var(--gap-branch);
+}
+@media (min-width: 768.02px) {
+  .branch_main {
+    flex: 1 0 100%;
+  }
+}
+@media (min-width: 950px) {
+  .branch_main {
+    flex: initial;
+  }
+}
+.branch__commanders {
+  border: 2px solid black;
+  width: 250px;
+}
+.branch__commanders::after {
+  width: calc(var(--gap-branch) * 2 + 5px);
+  top: 50%;
+  transform: translateX(-100%);
+  left: -1px;
+}
+@media (min-width: 768.02px) {
+  .branch__commanders::after {
+    display: none;
+  }
+}
+@media (min-width: 950px) {
+  .branch__commanders::after {
+    display: block;
+    bottom: -1px;
+    height: 60px;
+    top: unset;
+    transform: translateY(100%);
+    left: 50%;
+    width: 0;
+  }
+}
+.branch__commanders::before {
+  display: none;
+}
+@media (min-width: 950px) {
+  .branch_chiefs {
+    order: -1;
+    margin-top: 4rem;
+  }
+}
+.branch_chiefs::before {
+  bottom: 50%;
+  top: -67px;
+  transform: translateX(calc(-5px - var(--gap-branch) * 2));
+  left: -1px;
+}
+@media (min-width: 768.02px) {
+  .branch_chiefs::before {
+    transform: translateX(calc(var(--gap-branch) * 2));
+    right: 0;
+    left: unset;
+    top: -40px;
+  }
+}
+@media (min-width: 950px) {
+  .branch_chiefs::before {
+    display: none;
+  }
+}
+.branch_chiefs::after {
+  top: 50%;
+  width: calc(var(--gap-branch) + 5px);
+  transform: translateX(calc(var(--gap-branch) * -1 - 100%));
+  left: -1px;
+}
+@media (min-width: 768.02px) {
+  .branch_chiefs::after {
+    left: unset;
+    right: 0;
+    transform: translateX(calc(var(--gap-branch) + 100%));
+    width: var(--gap-branch);
+  }
+}
+@media (min-width: 950px) {
+  .branch_chiefs::after {
+    width: 154px;
+  }
+}
+.branch__chief {
+  border: 2px solid black;
+  width: 250px;
+}
+.branch__chief::before {
+  bottom: calc(var(--gap-branch) * -1);
+  top: calc(var(--gap-branch) * -1);
+  transform: translateX(calc(0px - var(--gap-branch)));
+  left: -1px;
+}
+@media (min-width: 768.02px) {
+  .branch__chief::before {
+    left: unset;
+    right: -1px;
+    transform: translateX(var(--gap-branch));
+  }
+}
+.branch__chief:first-child::before {
+  top: 50%;
+}
+.branch__chief:last-child::before {
+  bottom: 50%;
+}
+.branch__chief::after {
+  width: var(--gap-branch);
+  top: 50%;
+  transform: translateX(-100%);
+  left: -1px;
+}
+@media (min-width: 768.02px) {
+  .branch__chief::after {
+    left: unset;
+    right: -1px;
+    transform: translateX(100%);
+  }
+}
+@media (min-width: 950px) {
+  .branch_officers {
+    margin-top: 4rem;
+  }
+}
+.branch_officers::before {
+  bottom: 50%;
+  top: -126px;
+  transform: translateX(calc(0px - var(--gap-branch) * 2));
+  left: -1px;
+}
+@media (min-width: 768.02px) {
+  .branch_officers::before {
+    top: -40px;
+    left: 0;
+  }
+}
+@media (min-width: 950px) {
+  .branch_officers::before {
+    display: none;
+  }
+}
+.branch_officers::after {
+  width: var(--gap-branch);
+  top: 50%;
+  transform: translateX(-200%);
+  left: 0;
+}
+@media (min-width: 950px) {
+  .branch_officers::after {
+    width: 164px;
+    transform: translateX(-100%);
+  }
+}
+.branch__officer {
+  border: 2px solid black;
+  width: 250px;
+}
+.branch__officer::before {
+  bottom: calc(var(--gap-branch) * -1);
+  top: calc(var(--gap-branch) * -1);
+  transform: translateX(calc(0px - var(--gap-branch)));
+  left: -1px;
+}
+.branch__officer:first-child::before {
+  top: 50%;
+}
+.branch__officer:last-child::before {
+  bottom: 50%;
+}
+.branch__officer::after {
+  width: var(--gap-branch);
+  top: 50%;
+  transform: translateX(-100%);
+  left: -1px;
+}
+
+.branch_chiefs,
+.branch_officers,
+.branch__commanders,
+.branch__chief,
+.branch__officer {
+  position: relative;
+}
+.branch_chiefs::after, .branch_chiefs::before,
+.branch_officers::after,
+.branch_officers::before,
+.branch__commanders::after,
+.branch__commanders::before,
+.branch__chief::after,
+.branch__chief::before,
+.branch__officer::after,
+.branch__officer::before {
+  content: "";
+  position: absolute;
+  outline: solid 1px #000;
+}

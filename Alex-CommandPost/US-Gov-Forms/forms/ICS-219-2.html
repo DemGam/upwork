@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>ICS 219-2: Crew/Team Card</title>
+	<link rel="stylesheet" href="../css/style-forms.css">
+</head>
+
+<body>
+	<div class="wrapper bg-green">
+
+		<div class="tablet-col card-wrapper">
+			<div class="card">
+				<div class="card__title">
+					<table class="thin-border card__title_first-row">
+						<tbody>
+							<tr>
+								<td class="cell-1">
+									<div class="cell__text txt-bold">ST/Unit:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-2">
+									<div class="cell__text txt-bold">LDW:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-3">
+									<div class="cell__text txt-bold"># Pers:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-4">
+									<div class="cell__text txt-bold">Order #:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="thin-border card__title_second-row">
+						<tbody>
+							<tr>
+								<td class="cell-1" rowspan="2">
+									<input class="input input_transparent" type="text">
+									<div class="cell__text txt-bold txt-center">Agency</div>
+								</td>
+								<td class="cell-2 br-bot-none">
+									<input class="input input_transparent" type="text">
+
+								</td>
+								<td class="cell-3 br-bot-none">
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-4 br-bot-none">
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-5" rowspan="2"><input class="input input_transparent" type="text">
+									<div class="cell__text txt-bold txt-center">Name/ID #</div>
+								</td>
+							</tr>
+							<tr>
+
+								<td colspan="3" class="br-top-none">
+									<div class="cell__text txt-bold txt-center">Cat/Kind/Type</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<!-- CONTENT=============== -->
+				<div class="card__content">
+					<div class="txt-bold cell__text txt-center border br-top-none"><i>Front</i></div>
+
+					<table class="thin-border border br-top-none">
+						<tbody>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Date/Time Checked In:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Leader Name:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Primary Contact Information:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Crew/Team ID #(s) or Name(s):</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+
+							<tr>
+								<td class="w_1-2">
+									<div class="cell__text txt-bold">Manifest:</div>
+
+									<div class="mb-05">
+										<input type="radio" class="radio_left radio_small" id="219-2-has-manifest-yes" name="219-2-manifest"
+											value="yes">
+										<label for="219-2-has-manifest-yes">Yes</label>
+										<input type="radio" class="radio_left radio_small" id="219-2-has-manifest-yes-no"
+											name="219-2-manifest" value="no">
+										<label for="219-2-has-manifest-yes-no">No</label>
+									</div>
+								</td>
+								<td class="w_1-2">
+									<div class="cell__text txt-bold">Total Weight:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2" class="cell__text">
+									<div class="txt-bold mb-05">Method of Travel to Incident:</div>
+
+									<div class="mb-05">
+										<input type="checkbox" class="check-box_left check-box_small" id="219-2-meth-trav-aov"
+											name="219-2-method-travel" value="AOV">
+										<label for="219-2-meth-trav-aov">AOV</label>
+										<input type="checkbox" class="check-box_left check-box_small" id="219-2-meth-trav-pov"
+											name="219-2-method-travel" value="POV">
+										<label for="219-2-meth-trav-pov">POV</label>
+										<input type="checkbox" class="check-box_left check-box_small" id="219-2-meth-trav-bus"
+											name="219-2-method-travel" value="Bus">
+										<label for="219-2-meth-trav-bus">Bus</label>
+									</div>
+
+									<div>
+										<input type="checkbox" class="check-box_left check-box_small" id="219-2-meth-trav-air"
+											name="219-2-method-travel" value="Air">
+										<label for="219-2-meth-trav-air">Air</label>
+										<input type="checkbox" class="check-box_left check-box_small" id="219-2-meth-trav-other"
+											name="219-2-method-travel" value="Other">
+										<label for="219-2-meth-trav-other">Other</label>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__row-item"><span class="txt-bold txt-nowrap">Home Base:</span>
+										<input class="input input_transparent" type="text">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__row-item"><span class="txt-bold txt-nowrap">Departure Point:</span>
+										<input class="input input_transparent" type="text">
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<div class="cell__row-item"><span class="txt-bold">ETD:</span>
+										<input class="input input_transparent" type="text">
+									</div>
+								</td>
+								<td>
+									<div class="cell__row-item"><span class="txt-bold">ETA:</span>
+										<input class="input input_transparent" type="text">
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2" class="cell__text">
+									<div class="txt-bold mb-05">Transportation Needs at Incident:</div>
+
+									<div>
+										<input type="checkbox" class="check-box_left check-box_small" id="219-2-transp-need-vehicle"
+											name="219-2-transport-needs" value="Vehicle">
+										<label for="219-2-transp-need-vehicle">Vehicle</label>
+										<input type="checkbox" class="check-box_left check-box_small" id="219-2-transp-need-bus"
+											name="219-2-transport-needs" value="Bus">
+										<label for="219-2-transp-need-bus">Bus</label>
+										<input type="checkbox" class="check-box_left check-box_small" id="219-2-transp-need-air"
+											name="219-2-transport-needs" value="Air">
+										<label for="219-2-transp-need-air">Air</label>
+										<input type="checkbox" class="check-box_left check-box_small" id="219-2-transp-need-other"
+											name="219-2-transport-needs" value="Other">
+										<label for="219-2-transp-need-other">Other</label>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__row-item"><span class="txt-bold txt-nowrap">Date/Time Ordered:</span>
+										<input class="input input_transparent" type="text">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Remarks:</div>
+									<div class="textarea__wrapper">
+										<textarea class="textarea_transparent" Rows="17"></textarea>
+									</div>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+
+
+				</div>
+				<div class="card__footer d-flex-end">
+					<div>
+						<div class="txt-bold cell__text">Prepared&nbsp;by:</div>
+						<div class="txt-bold cell__text">Date/Time:</div>
+					</div>
+					<div>
+						<textarea class="textarea_transparent" rows="2"></textarea>
+					</div>
+
+				</div>
+				<div class="card__footer txt-bold cell__text">
+					ICS 219-2 CREW/TEAM (GREEN)
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card__title">
+					<table class="thin-border card__title_first-row">
+						<tbody>
+							<tr>
+								<td class="cell-1">
+									<div class="cell__text txt-bold">ST/Unit:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-2">
+									<div class="cell__text txt-bold">LDW:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-3">
+									<div class="cell__text txt-bold"># Pers:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-4">
+									<div class="cell__text txt-bold">Order #:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="thin-border card__title_second-row">
+						<tbody>
+							<tr>
+								<td class="cell-1" rowspan="2">
+									<input class="input input_transparent" type="text">
+									<div class="cell__text txt-bold txt-center">Agency</div>
+								</td>
+								<td class="cell-2 br-bot-none">
+									<input class="input input_transparent" type="text">
+
+								</td>
+								<td class="cell-3 br-bot-none">
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-4 br-bot-none">
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="cell-5" rowspan="2"><input class="input input_transparent" type="text">
+									<div class="cell__text txt-bold txt-center">Name/ID #</div>
+								</td>
+							</tr>
+							<tr>
+
+								<td colspan="3" class="br-top-none">
+									<div class="cell__text txt-bold txt-center">Cat/Kind/Type</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- CONTENT=============== -->
+				<div class="card__content">
+
+					<div class="txt-bold cell__text txt-center border br-top-none"><i>Back</i></div>
+					<table class="thin-border border br-top-none">
+						<tbody>
+							<tr>
+								<td class="v-align-top w_2-3">
+									<div class="cell__text txt-bold">Incident Location:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="v-align-top">
+									<div class="cell__text txt-bold">Time:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Status:</div>
+									<div class="d-flex-base mb-05">
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-1-assigned" name="219-2-status-1"
+											value="219-2-back-1-assigned">
+										<label for="219-2-back-1-assigned">Assigned</label>
+
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-1-os-rest" name="219-2-status-1"
+											value="219-2-back-1-os-rest">
+										<label for="219-2-back-1-os-rest">O/S&nbsp;Rest</label>
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-1-os-pers" name="219-2-status-1"
+											value="219-2-back-1-os-pers">
+										<label for="219-2-back-1-os-pers">O/S&nbsp;Pers</label>
+
+									</div>
+									<div class="d-flex-base mb-05">
+										<div>
+											<input class="radio_left radio_small" type="radio" id="219-2-back-1-available"
+												name="219-2-status-1" value="219-2-back-1-available">
+											<label for="219-2-back-1-available">Available</label>
+										</div>
+										<div>
+											<input class="radio_left radio_small" type="radio" id="219-2-back-1-os-mech" name="219-2-status-1"
+												value="219-2-back-1-os-mech">
+											<label for="219-2-back-1-os-mech">O/S&nbsp;Mech</label>
+										</div>
+										<div class="d-flex-end">
+											<input class="radio_left radio_small" type="radio" id="219-2-back-1-etr" name="219-2-status-1"
+												value="219-2-back-1-etr">
+											<label for="219-2-back-1-etr">ETR:</label>
+											<input class="input input_under input_transparent" type="text">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Notes:</div>
+									<div class="textarea__wrapper">
+										<textarea class="textarea_transparent" Rows="4"></textarea>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="thin-border border br-top-none">
+						<tbody>
+							<tr>
+								<td class="v-align-top w_2-3">
+									<div class="cell__text txt-bold">Incident Location:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="v-align-top">
+									<div class="cell__text txt-bold">Time:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Status:</div>
+									<div class="d-flex-base mb-05">
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-2-assigned" name="219-2-status-2"
+											value="219-2-back-2-assigned">
+										<label for="219-2-back-2-assigned">Assigned</label>
+
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-2-os-rest" name="219-2-status-2"
+											value="219-2-back-2-os-rest">
+										<label for="219-2-back-2-os-rest">O/S&nbsp;Rest</label>
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-2-os-pers" name="219-2-status-2"
+											value="219-2-back-2-os-pers">
+										<label for="219-2-back-2-os-pers">O/S&nbsp;Pers</label>
+
+									</div>
+									<div class="d-flex-base mb-05">
+										<div>
+											<input class="radio_left radio_small" type="radio" id="219-2-back-2-available"
+												name="219-2-status-2" value="219-2-back-2-available">
+											<label for="219-2-back-2-available">Available</label>
+										</div>
+										<div>
+											<input class="radio_left radio_small" type="radio" id="219-2-back-2-os-mech" name="219-2-status-2"
+												value="219-2-back-2-os-mech">
+											<label for="219-2-back-2-os-mech">O/S&nbsp;Mech</label>
+										</div>
+										<div class="d-flex-end">
+											<input class="radio_left radio_small" type="radio" id="219-2-back-2-etr" name="219-2-status-2"
+												value="219-2-back-2-etr">
+											<label for="219-2-back-2-etr">ETR:</label>
+											<input class="input input_under input_transparent" type="text">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Notes:</div>
+									<div class="textarea__wrapper">
+										<textarea class="textarea_transparent" Rows="4"></textarea>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="thin-border border br-top-none">
+						<tbody>
+							<tr>
+								<td class="v-align-top w_2-3">
+									<div class="cell__text txt-bold">Incident Location:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="v-align-top">
+									<div class="cell__text txt-bold">Time:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Status:</div>
+									<div class="d-flex-base mb-05">
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-3-assigned" name="219-2-status-3"
+											value="219-2-back-3-assigned">
+										<label for="219-2-back-3-assigned">Assigned</label>
+
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-3-os-rest" name="219-2-status-3"
+											value="219-2-back-3-os-rest">
+										<label for="219-2-back-3-os-rest">O/S&nbsp;Rest</label>
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-3-os-pers" name="219-2-status-3"
+											value="219-2-back-3-os-pers">
+										<label for="219-2-back-3-os-pers">O/S&nbsp;Pers</label>
+
+									</div>
+									<div class="d-flex-base mb-05">
+										<div>
+											<input class="radio_left radio_small" type="radio" id="219-2-back-3-available"
+												name="219-2-status-3" value="219-2-back-3-available">
+											<label for="219-2-back-3-available">Available</label>
+										</div>
+										<div>
+											<input class="radio_left radio_small" type="radio" id="219-2-back-3-os-mech" name="219-2-status-3"
+												value="219-2-back-3-os-mech">
+											<label for="219-2-back-3-os-mech">O/S&nbsp;Mech</label>
+										</div>
+										<div class="d-flex-end">
+											<input class="radio_left radio_small" type="radio" id="219-2-back-3-etr" name="219-2-status-3"
+												value="219-2-back-3-etr">
+											<label for="219-2-back-3-etr">ETR:</label>
+											<input class="input input_under input_transparent" type="text">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Notes:</div>
+									<div class="textarea__wrapper">
+										<textarea class="textarea_transparent" Rows="4"></textarea>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="thin-border border br-top-none">
+						<tbody>
+							<tr>
+								<td class="v-align-top w_2-3">
+									<div class="cell__text txt-bold">Incident Location:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+								<td class="v-align-top">
+									<div class="cell__text txt-bold">Time:</div>
+									<input class="input input_transparent" type="text">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Status:</div>
+									<div class="d-flex-base mb-05">
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-4-assigned" name="219-2-status-4"
+											value="219-2-back-4-assigned">
+										<label for="219-2-back-4-assigned">Assigned</label>
+
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-4-os-rest" name="219-2-status-4"
+											value="219-2-back-4-os-rest">
+										<label for="219-2-back-4-os-rest">O/S&nbsp;Rest</label>
+
+										<input class="radio_left radio_small" type="radio" id="219-2-back-4-os-pers" name="219-2-status-4"
+											value="219-2-back-4-os-pers">
+										<label for="219-2-back-4-os-pers">O/S&nbsp;Pers</label>
+
+									</div>
+									<div class="d-flex-base mb-05">
+										<div>
+											<input class="radio_left radio_small" type="radio" id="219-2-back-4-available"
+												name="219-2-status-4" value="219-2-back-4-available">
+											<label for="219-2-back-4-available">Available</label>
+										</div>
+										<div>
+											<input class="radio_left radio_small" type="radio" id="219-2-back-4-os-mech" name="219-2-status-4"
+												value="219-2-back-4-os-mech">
+											<label for="219-2-back-4-os-mech">O/S&nbsp;Mech</label>
+										</div>
+										<div class="d-flex-end">
+											<input class="radio_left radio_small" type="radio" id="219-2-back-4-etr" name="219-2-status-4"
+												value="219-2-back-4-etr">
+											<label for="219-2-back-4-etr">ETR:</label>
+											<input class="input input_under input_transparent" type="text">
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="cell__text txt-bold">Notes:</div>
+									<div class="textarea__wrapper">
+										<textarea class="textarea_transparent" Rows="4"></textarea>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+
+
+				</div>
+				<div class="card__footer d-flex-end">
+					<div>
+						<div class="txt-bold cell__text">Prepared&nbsp;by:</div>
+						<div class="txt-bold cell__text">Date/Time:</div>
+					</div>
+					<div>
+						<textarea class="textarea_transparent" rows="2"></textarea>
+					</div>
+
+				</div>
+				<div class="card__footer txt-bold cell__text">
+					ICS 219-2 CREW/TEAM (GREEN)
+				</div>
+			</div>
+
+		</div>
+
+		<!-- =========PAGE BREAKER============= -->
+		<div class="page-breaker"></div>
+
+	</div>
+
+
+	<div class="wrapper">
+		<h2 class="page__title txt-bold">ICS 219-2: Crew/Team Card</h2>
+		<div class="instruction-table__wrapper">
+			<table class="instruction-table break-word">
+				<tbody>
+					<tr>
+
+						<th class="cell bg-grey v-align-middle txt-left w_1-4">
+							<div class="txt-bold txt-white">Block Title</div>
+						</th>
+						<th class="cell bg-grey v-align-middle txt-left">
+							<div class="txt-bold txt-white">Instructions</div>
+						</th>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">ST/Unit</div>
+						</td>
+						<td>
+							<div>Enter the State and/or unit identifier (3–5 letters) used by the authority having
+								jurisdiction.</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								LDW (Last Day Worked)
+							</div>
+						</td>
+						<td>
+							<div>
+								Indicate the last available workday that the resource is allowed to work
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								# Pers
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter total number of personnel associated with the crew/team. Include leaders.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Order #
+							</div>
+						</td>
+						<td>
+							<div>
+								The order request number will be assigned by the agency dispatching resources or
+								personnel to the incident. Use existing protocol as appropriate for the jurisdiction
+								and/or discipline, since several incident numbers may be used for the same incident.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Agency
+							</div>
+						</td>
+						<td>
+							<div>
+								Use this section to list agency name or designator (e.g., ORC, ARL, NYPD).
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Cat/Kind/Type
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter the category/kind/type based on NIMS, discipline, or jurisdiction guidance.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Name/ID #
+							</div>
+						</td>
+						<td>
+							<div>
+								Use this section to enter the resource name or unique identifier (e.g., 13, Bluewater,
+								Utility 32).
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Date/Time Checked In
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter date (month/day/year) and time of check-in (24-hour clock) to the incident.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Leader Name
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter resource leader’s name (use at least the first initial and last name).
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Primary Contact
+								Information
+							</div>
+						</td>
+						<td>
+							<div>
+								<p class="mb-05">Enter the primary contact information (e.g., cell phone number, radio, etc.) for the
+									leader.</p>
+								<p class="mb-05">If radios are being used, enter function (command, tactical, support, etc.), frequency,
+									system, and channel from the Incident Radio Communications Plan (ICS 205).</p>
+								<p>Phone and pager numbers should include the area code and any satellite phone
+									specifics.</p>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Crew/Team ID #(s) or
+								Name(s)
+							</div>
+						</td>
+						<td>
+							<div>
+								Provide the identifier number(s) or name(s) for this crew/team (e.g., Air Monitoring
+								Team 2, Entry Team 3).
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+
+						<td>
+							<div class="txt-bold mb-05">Manifest</div>
+							<div>
+								<div class="mb-05">
+									<input type="radio" class="radio_left" disabled>
+									<label>Yes</label>
+								</div>
+								<div>
+									<input type="radio" class="radio_left" disabled>
+									<label>No</label>
+								</div>
+
+							</div>
+
+						</td>
+						<td>
+							<div>Use this section to enter whether or not the resource or personnel has a manifest. If
+								they do, indicate the manifest number.</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Total Weight
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter the total weight for the crew/team. This information is necessary when the
+								crew/team are transported by charter air.
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="txt-bold mb-05">Method of Travel to
+								Incident
+							</div>
+
+
+							<div class="checkbox-wrapper">
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>AOV</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>POV</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Bus</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Air</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Other</label>
+								</div>
+							</div>
+
+
+
+						</td>
+
+						<td>
+							<div>Check the box(es) for the appropriate method(s) of travel the individual used to bring
+								himself/herself to the incident. AOV is “agency-owned vehicle.” POV is “privately
+								owned vehicle.”</div>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Home Base
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter the home base to which the resource or individual is normally assigned (may not
+								be departure location).
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Departure Point
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter the location from which the resource or individual departed for this incident.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								ETD
+							</div>
+						</td>
+						<td>
+							<div>
+								Use this section to enter the crew/team’s estimated time of departure (using the 24-hour
+								clock) from their home base.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								ETA
+							</div>
+						</td>
+						<td>
+							<div>
+								Use this section to enter the crew/team’s estimated time of arrival (using the 24-hour
+								clock) at the incident.
+							</div>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+
+		<!-- =========PAGE BREAKER============= -->
+		<div class="page-breaker"></div>
+
+		<div class="instruction-table__wrapper">
+			<table class="instruction-table break-word">
+				<tbody>
+					<tr>
+
+						<th class="cell bg-grey v-align-middle txt-left w_1-4">
+							<div class="txt-bold txt-white">Block Title</div>
+						</th>
+						<th class="cell bg-grey v-align-middle txt-left">
+							<div class="txt-bold txt-white">Instructions</div>
+						</th>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold mb-05">Transportation Needs at
+								Incident</div>
+							<div class="checkbox-wrapper">
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Vehicle</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Bus</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Air</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Other</label>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div>
+								Check the box(es) for the appropriate method(s) of transportation at the incident.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">Date/Time Ordered</div>
+						</td>
+						<td>
+							<div>
+								Enter date (month/day/year) and time (24-hour clock) the crew/team was ordered to the
+								incident.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">Remarks</div>
+						</td>
+						<td>
+							<div>
+								Enter any additional information pertaining to the crew/team.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2" class="txt-bold bg-grey_light">BACK OF FORM</td>
+					</tr>
+
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Incident Location
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter the location of the crew/team.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Time
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter the time (24-hour clock) the crew/team reported to this location.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold mb-05">
+								Status
+							</div>
+							<div>
+								<div class="mb-05">
+									<input type="radio" class="radio_left" disabled>
+									<label>Assigned</label>
+								</div>
+								<div class="mb-05">
+									<input type="radio" class="radio_left" disabled>
+									<label>O/S Rest</label>
+								</div>
+								<div class="mb-05">
+									<input type="radio" class="radio_left" disabled>
+									<label>O/S Pers</label>
+								</div>
+								<div class="mb-05">
+									<input type="radio" class="radio_left" disabled>
+									<label>Available</label>
+								</div>
+								<div class="mb-05">
+									<input type="radio" class="radio_left" disabled>
+									<label>O/S Mech</label>
+								</div>
+								<div class="mb-05">
+									<input type="radio" class="radio_left" disabled>
+									<label>ETR:</label>
+									<!-- input -->
+									<input class="input input_under input_transparent input_small" type="text">
+								</div>
+							</div>
+						</td>
+						<td>
+							<p class="mb-05">Enter the crew/team’s current status:</p>
+							<ul class="disc-list">
+								<li>Assigned – Assigned to the incident</li>
+								<li>O/S Rest – Out-of-service for rest/recuperation purposes/guidelines, or due to
+									operating time limits/policies for pilots, operators, drivers, equipment, or aircraft</li>
+								<li>O/S Pers – Out-of-service for personnel reasons</li>
+								<li>Available – Available to be assigned to the incident</li>
+								<li>O/S Mech – Out-of-service for mechanical reasons</li>
+								<li>ETR – Estimated time of return</li>
+							</ul>
+
+						</td>
+
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Notes
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter any additional information pertaining to the crew/team’s current location or status.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="txt-bold">
+								Prepared by <br>
+								Date/Time
+							</div>
+						</td>
+						<td>
+							<div>
+								Enter the name of the person preparing the form. Enter the date (month/day/year) and
+								time prepared (using the 24-hour clock).
+							</div>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+
+
+	</div>
+</body>
+
+</html>

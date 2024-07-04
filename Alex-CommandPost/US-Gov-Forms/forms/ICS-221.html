@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>DEMOBILIZATION CHECK-OUT (ICS 221)</title>
+	<link rel="stylesheet" href="../css/style-forms.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1 class="form__title">DEMOBILIZATION CHECK-OUT (ICS&nbsp;221)</h1>
+
+		<table class="header__table">
+			<tbody>
+				<tr>
+					<td colspan="2" class="cell tablet-block w_1-2">
+						<div class="pos-center txt-nowrap">
+							<div class="cell__text txt-bold"> 1. Incident Name</div>
+
+							<input class="input" type="text">
+						</div>
+					</td>
+					<td colspan="2" class="cell tablet-block w_1-2 br-bot-none">
+						<div class="pos-center txt-nowrap">
+							<div class="cell__text txt-bold"> 2. Incident Number:</div>
+							<input class="input" type="text">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="tablet-block w_1-3">
+						<div class="cell__text txt-bold">3. Planned Release Date/Time:</div>
+						<div class="cell__row">
+							<div class="cell__row-item w_1-2 txt-nowrap">
+								<span>Date:</span>
+								<input class="input" type="text">
+							</div>
+							<div class="cell__row-item w_1-2 txt-nowrap">
+								<span>Time:</span>
+								<input class="input" type="text">
+							</div>
+						</div>
+					</td>
+					<td colspan="2" class="tablet-block w_1-3">
+						<div class="cell__text txt-bold">
+							4. Resource or Personnel Released:
+						</div>
+						<input class="input" type="text">
+					</td>
+					<td class="tablet-block w_1-3">
+						<div class="cell__text txt-bold">
+							5. Order Request Number:
+						</div>
+						<input class="input" type="text">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="middle__table_221 w_1-1">
+			<div class="middle__table_221-cell cell__text">
+				<div>
+					<span class="txt-bold">6. Resource or Personnel:</span> <br>
+					You and your resources are in the process of being released. Resources are not released until the checked
+					boxes
+					below have been signed off by the appropriate overhead and the Demobilization Unit Leader (or Planning Section
+					representative).
+				</div>
+
+				<div class="resourse-table">
+					<div class="resourse-table__title txt-bold">LOGISTICS SECTION</div>
+					<table class="resourse-table__table resourse-table__table_l logistic-table br-out-none thin-border">
+						<tr>
+							<td class="cell-1"></td>
+							<td class="txt-bold cell__text cell-2">Unit/Manager</td>
+							<td class="txt-bold cell__text cell-3">Remarks</td>
+							<td class="txt-bold cell__text cell-4">Name</td>
+							<td class="txt-bold cell__text cell-5">Signature</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-logistic-supply" name="logistic-supply"
+										value="required">
+									<label for="221-logistic-supply"></label>
+								</div>
+							</td>
+							<td class="cell__text">Supply Unit</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-logistic-comm" name="logistic-comm"
+										value="required">
+									<label for="221-logistic-comm"></label>
+								</div>
+							</td>
+							<td class="cell__text txt-nowrap">Communications Unit</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-logistic-facilities" name="logistic-facilities"
+										value="required">
+									<label for="221-logistic-facilities"></label>
+								</div>
+							</td>
+							<td class="cell__text txt-nowrap">Facilities Unit</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-logistic-grnd-supp" name="logistic-grnd-supp"
+										value="required">
+									<label for="221-logistic-grnd-supp"></label>
+								</div>
+							</td>
+							<td class="cell__text txt-nowrap">Ground Support Unit</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-logistic-security" name="logistic-security"
+										value="required">
+									<label for="221-logistic-security"></label>
+								</div>
+							</td>
+							<td class="cell__text txt-nowrap">Security Manager</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-logistic-other" name="logistic-other"
+										value="required">
+									<label for="221-logistic-other"></label>
+								</div>
+							</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+					</table>
+
+					<!-- +++ MOBILE +++ -->
+					<table class="resourse-table__table resourse-table__table_s logistic-table thin-border">
+						<tbody>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-logistic-supply-mob"
+															name="logistic-supply" value="required">
+														<label for="221-logistic-supply-mob"></label>
+													</div>
+												</td>
+												<td class="cell-3 cell__text">Supply Unit</td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-logistic-comm-mob"
+															name="logistic-comm" value="required">
+														<label for="221-logistic-comm-mob"></label>
+													</div>
+												</td>
+												<td class="cell-3 cell__text">Communications Unit</td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-logistic-facilities-mob"
+															name="logistic-facilities" value="required">
+														<label for="221-logistic-facilities-mob"></label>
+													</div>
+												</td>
+												<td class="cell-3 cell__text">Facilities Unit</td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-logistic-grnd-supp-mob"
+															name="logistic-grnd-supp" value="required">
+														<label for="221-logistic-grnd-supp-mob"></label>
+													</div>
+												</td>
+												<td class="cell-3 cell__text">Ground Support Unit</td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-logistic-security-mob"
+															name="logistic-security" value="required">
+														<label for="221-logistic-security-mob"></label>
+													</div>
+												</td>
+												<td class="cell-3 cell__text">Security Manager</td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-logistic-other-mob"
+															name="logistic-other" value="required">
+														<label for="221-logistic-other-mob"></label>
+													</div>
+												</td>
+												<td class="cell-3 cell__text"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="resourse-table">
+					<div class="resourse-table__title txt-bold">FINANCE/ADMINISTRATION SECTION</div>
+					<table class="resourse-table__table resourse-table__table_l finance-table br-out-none thin-border">
+						<tr>
+							<td class="cell-1"></td>
+							<td class="txt-bold cell__text cell-2">Unit/Manager</td>
+							<td class="txt-bold cell__text cell-3">Remarks</td>
+							<td class="txt-bold cell__text cell-4">Name</td>
+							<td class="txt-bold cell__text cell-5">Signature</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-finance-time" name="finance-time"
+										value="required">
+									<label for="221-finance-time"></label>
+								</div>
+							</td>
+							<td class="cell__text">Time Unit</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-finance-other1" name="finance-other1"
+										value="required">
+									<label for="221-finance-other1"></label>
+								</div>
+							</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-finance-other2" name="finance-other2"
+										value="required">
+									<label for="221-finance-other2"></label>
+								</div>
+							</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+					</table>
+
+					<!-- +++ MOBILE +++ -->
+					<table class="resourse-table__table resourse-table__table_s finance-table thin-border">
+						<tbody>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-finance-time-mob" name="finance-time"
+															value="required">
+														<label for="221-finance-time-mob"></label>
+													</div>
+												</td>
+												<td class="cell-3 cell__text">Time Unit</td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-finance-other1-mob"
+															name="finance-other1" value="required">
+														<label for="221-finance-other1-mob"></label>
+													</div>
+												</td>
+												<td><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-finance-other2-mob"
+															name="finance-other2" value="required">
+														<label for="221-finance-other2-mob"></label>
+													</div>
+												</td>
+												<td><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="resourse-table">
+					<div class="resourse-table__title txt-bold">OTHER SECTION/STAFF</div>
+					<table class="resourse-table__table resourse-table__table_l other-table br-out-none thin-border">
+						<tr>
+							<td class="cell-1"></td>
+							<td class="txt-bold cell__text cell-2">Unit/Manager</td>
+							<td class="txt-bold cell__text cell-3">Remarks</td>
+							<td class="txt-bold cell__text cell-4">Name</td>
+							<td class="txt-bold cell__text cell-5">Signature</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-other-other1" name="other-other1"
+										value="required">
+									<label for="221-other-other1"></label>
+								</div>
+							</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-other-other2" name="other-other2"
+										value="required">
+									<label for="221-other-other2"></label>
+								</div>
+							</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+					</table>
+
+					<!-- +++ MOBILE +++ -->
+					<table class="resourse-table__table resourse-table__table_s other-table thin-border">
+						<tbody>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-other-other1-mob" name="other-other1"
+															value="required">
+														<label for="221-other-other1-mob"></label>
+													</div>
+												</td>
+												<td><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-other-other2-mob" name="other-other2"
+															value="required">
+														<label for="221-other-other2-mob"></label>
+													</div>
+												</td>
+												<td><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="resourse-table">
+					<div class="resourse-table__title txt-bold">PLANNING SECTION</div>
+					<table class="resourse-table__table resourse-table__table_l planning-table br-out-none thin-border">
+						<tr>
+							<td class="cell-1"></td>
+							<td class="txt-bold cell__text cell-2">Unit/Manager</td>
+							<td class="txt-bold cell__text cell-3">Remarks</td>
+							<td class="txt-bold cell__text cell-4">Name</td>
+							<td class="txt-bold cell__text cell-5">Signature</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-planning-other1" name="planning-other1"
+										value="required">
+									<label for="221-planning-other1"></label>
+								</div>
+							</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-planning-doc" name="planning-doc"
+										value="required">
+									<label for="221-planning-doc"></label>
+								</div>
+							</td>
+							<td class="cell__text">Documentation Leader</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="pos-center ch-box-and-input">
+									<input class="check-box_left" type="checkbox" id="221-planning-dem" name="planning-dem"
+										value="required">
+									<label for="221-planning-dem"></label>
+								</div>
+							</td>
+							<td class="cell__text">Demobilization Leader</td>
+							<td><input class="input" type="text"></td>
+							<td><input class="input" type="text"></td>
+							<td>
+								<div class="sign-req">
+									<input class="input input_disable" type="text" disabled="">
+								</div>
+							</td>
+						</tr>
+					</table>
+
+					<!-- +++ MOBILE +++ -->
+					<table class="resourse-table__table resourse-table__table_s planning-table thin-border">
+						<tbody>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-planning-other1-mob"
+															name="planning-other1" value="required">
+														<label for="221-planning-other1-mob"></label>
+													</div>
+												</td>
+												<td><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-planning-doc-mob" name="planning-doc"
+															value="required">
+														<label for="221-planning-doc-mob"></label>
+													</div>
+												</td>
+												<td class="cell__text">Documentation Leader</td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table class="resourse-unit_221 br-out-none thin-border">
+										<tbody>
+											<tr>
+												<td class="cell-1 cell__text txt-bold">Unit/Manager</td>
+												<td class="cell-2">
+													<div class="pos-center ch-box-and-input">
+														<input class="check-box_left" type="checkbox" id="221-planning-dem-mob" name="planning-dem"
+															value="required">
+														<label for="221-planning-dem-mob"></label>
+													</div>
+												</td>
+												<td class="cell__text">Demobilization Leader</td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Remarks</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Name</td>
+												<td colspan="2"><input class="input" type="text"></td>
+											</tr>
+											<tr>
+												<td class="cell__text txt-bold">Signature</td>
+												<td colspan="2">
+													<div class="sign-req">
+														<input class="input input_disable" type="text" disabled="">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+			</div>
+
+			<div class="middle__table_221-cell">
+				<div class="cell__text txt-bold">7. Remarks:</div>
+				<div class="textarea__wrapper">
+					<textarea class="textarea" rows="3"></textarea>
+				</div>
+			</div>
+
+			<div class="middle__table_221-cell cell-221 cell__text">
+				<div class="cell-221__travel">
+					<div class="cell-221__travel_part">
+						<div class="txt-bold">8. Travel Information:</div>
+						<div class="row-copy__item">
+							<span class="txt-nowrap">Estimated Time of Departure:</span>
+							<input class="input input_under" type="text">
+						</div>
+						<div class="row-copy__item">
+							<span>Destination:</span>
+							<input class="input input_under" type="text">
+						</div>
+						<div class="row-copy__item">
+							<span class="txt-nowrap">Travel Method:</span>
+							<input class="input input_under" type="text">
+						</div>
+						<div class="row-copy__item">
+							<span>Manifest:</span>
+							<div class="radio radio_horizontal">
+								<input class="radio_left" type="radio" id="221-travel-info-manifest-yes" name="221-travel-info-manifest"
+									value="yes">
+								<label for="221-travel-info-manifest-yes">Yes</label>
+								<input class="radio_left" type="radio" id="221-travel-info-manifest-no" name="221-travel-info-manifest"
+									value="no">
+								<label for="221-travel-info-manifest-no">No</label>
+							</div>
+						</div>
+						<div class="row-copy__item">
+							<span>Number:</span>
+							<input class="input input_under" type="text">
+						</div>
+					</div>
+
+					<div class="cell-221__travel_part">
+						<div class="row-copy__item">
+							<span>Room Overnight:</span>
+							<div class="radio radio_horizontal">
+								<input class="radio_left" type="radio" id="221-travel-info-room-yes" name="221-travel-info-room"
+									value="yes">
+								<label for="221-travel-info-room-yes">Yes</label>
+								<input class="radio_left" type="radio" id="221-travel-info-room-no" name="221-travel-info-room"
+									value="no">
+								<label for="221-travel-info-room-no">No</label>
+							</div>
+						</div>
+						<div class="row-copy__item">
+							<span class="txt-nowrap">Actual Release Date/Time:</span>
+							<input class="input input_under" type="text">
+						</div>
+						<div class="row-copy__item">
+							<span class="txt-nowrap">Estimated Time of Arrival:</span>
+							<input class="input input_under" type="text">
+						</div>
+						<div class="row-copy__item">
+							<span class="txt-nowrap">Contact Information While Traveling:</span>
+							<input class="input input_under" type="text">
+						</div>
+						<div class="row-copy__item">
+							<div>Area/Agency/Region Notified:</div>
+						</div>
+						<div class="row-copy__item">
+							<input class="input input_under" type="text">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="middle__table_221-cell cell-221 cell__text">
+				<div class="cell-221__reassign">
+					<div class="cell-221__reassign_part">
+						<div class="row-copy__item">
+							<span class="txt-bold">9. Reassignment Information:</span>
+							<div class="radio radio_horizontal">
+								<input class="radio_left" type="radio" id="221-reassign-info-yes" name="221-reassign-info" value="yes">
+								<label for="221-reassign-info-yes">Yes</label>
+								<input class="radio_left" type="radio" id="221-reassign-info-no" name="221-reassign-info" value="no">
+								<label for="221-reassign-info-no">No</label>
+							</div>
+						</div>
+						<div class="row-copy__item">
+							<span class="txt-nowrap">Incident Name:</span>
+							<input class="input input_under" type="text">
+						</div>
+						<div class="row-copy__item">
+							<span>Location:</span>
+							<input class="input input_under" type="text">
+						</div>
+					</div>
+
+					<div class="cell-221__reassign_part">
+
+						<div class="row-copy__item">
+							<span class="txt-nowrap">Incident Number:</span>
+							<input class="input input_under" type="text">
+						</div>
+						<div class="row-copy__item">
+							<span class="txt-nowrap">Order Request Number:</span>
+							<input class="input input_under" type="text">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<table class="footer__table">
+			<tbody>
+				<tr>
+					<td class="br-bot-none br-top-none">
+						<div class="mobile-col cell__text row-copy">
+							<div class="txt-nowrap txt-bold">
+								10. Prepared by:
+							</div>
+							<div class="row-copy__item">
+								<span>Name:</span>
+								<input class="input input_under" type="text">
+							</div>
+							<div class="row-copy__item">
+								<span>Position/Title:</span>
+								<input class="input input_under" type="text">
+							</div>
+							<div class="row-copy__item">
+								<span>Signature:</span>
+								<div class="sign-req">
+									<input class="input input_under input_disable" type="text" disabled>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="br-top-none">
+						<div class="mobile-col-rev d-flex-end">
+							<div class="d-flex-end w_1-2 custom-border_r-t w_1-1_mob">
+								<div class="cell__text txt-bold flex-50">
+									ICS 221
+								</div>
+							</div>
+							<div class="w_1-1_mob w_1-2">
+								<div class="date-row">Date/Time:
+									<input class="input input_under" type="text">
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- =========PAGE BREAKER============= -->
+		<div class="page-breaker"></div>
+
+		<h2 class="page__title txt-bold">ICS 221<br>Demobilization Check-Out</h2>
+		<p class="paragraph"><span class="paragraph__title txt-bold">Purpose.</span>The Demobilization Check-Out (ICS 221)
+			ensures that resources checking out of the incident have completed
+			all appropriate incident business, and provides the Planning Section information on resources released from the
+			incident.
+			Demobilization is a planned process and this form assists with that planning.
+		</p>
+		<p class="paragraph"><span class="paragraph__title txt-bold">Preparation.</span>The ICS 221 is initiated by the
+			Planning Section, or a Demobilization Unit Leader if designated. The
+			Demobilization Unit Leader completes the top portion of the form and checks the appropriate boxes in Block 6 that
+			may
+			need attention after the Resources Unit Leader has given written notification that the resource is no longer
+			needed. The
+			individual resource will have the appropriate overhead personnel sign off on any checked box(es) in Block 6 prior
+			to
+			release from the incident.</p>
+		<p class="paragraph"><span class="paragraph__title txt-bold">Distribution.</span>After completion, the ICS 221 is
+			returned to the Demobilization Unit Leader or the Planning Section. All
+			completed original forms must be given to the Documentation Unit. Personnel may request to retain a copy of the
+			ICS 221.</p>
+		<span class="paragraph__title txt-bold">Notes:</span>
+		<ul class="mb-1 disc-list">
+			<li>Members are not released until form is complete when all of the items checked in Block 6 have been signed off.
+			</li>
+			<li>If additional pages are needed for any form page, use a blank ICS 221 and repaginate as needed.</li>
+		</ul>
+
+
+		<div class="instruction-table__wrapper">
+			<table class="instruction-table break-word">
+				<tbody>
+					<tr>
+						<th class="cell bg-grey instruction-table__first-col">
+							<div class="txt-bold txt-white tablet-hiden">Block Number</div>
+							<div class="txt-bold txt-white tablet-visible">№</div>
+						</th>
+						<th class="cell bg-grey  instruction-table__second-col">
+							<div class="txt-bold txt-white">Block Title</div>
+						</th>
+						<th class="cell bg-grey ">
+							<div class="txt-bold txt-white">Instructions</div>
+						</th>
+					</tr>
+
+					<tr>
+						<td class="txt-center ">
+							<div class="txt-bold">1</div>
+						</td>
+						<td>
+							<div class="txt-bold">Incident Name</div>
+						</td>
+						<td>
+							<div>Enter the name assigned to the incident.</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="txt-center ">
+							<div class="txt-bold">2</div>
+						</td>
+						<td>
+							<div class="txt-bold">Incident Number</div>
+
+						</td>
+						<td>
+							<div>Enter the number assigned to the incident.</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="txt-center ">
+							<div class="txt-bold">3</div>
+						</td>
+						<td>
+							<div class="txt-bold mb-05">Planned Release Date/Time</div>
+						</td>
+						<td>
+							<div>
+								Enter the date (month/day/year) and time (using the 24-hour clock) of
+								the planned release from the incident.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="txt-center ">
+							<div class="txt-bold">4</div>
+						</td>
+						<td>
+							<div class="txt-bold">Resource or Personnel
+								Released</div>
+
+						</td>
+						<td>
+							<div>Enter name of the individual or resource being released.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="txt-center ">
+							<div class="txt-bold">5</div>
+						</td>
+						<td>
+							<div class="txt-bold">Order Request Number</div>
+
+						</td>
+						<td>
+							<div>
+								Enter order request number (or agency demobilization number) of the
+								individual or resource being released.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="txt-center " rowspan="2">
+							<div class="txt-bold">6</div>
+						</td>
+						<td>
+							<div class="txt-bold">Resource or Personnel</div>
+							<div>You and your resources are in
+								the process of being released.
+								Resources are not released until
+								the checked boxes below have
+								been signed off by the
+								appropriate overhead and the
+								Demobilization Unit Leader (or
+								Planning Section
+								representative).</div>
+							<ul class="disc-list">
+								<li>Unit/Leader/Manager/Other </li>
+								<li>Remarks</li>
+								<li>Name</li>
+								<li>Signature</li>
+							</ul>
+
+						</td>
+						<td>
+							<div>
+								Resources are not released until the checked boxes below have been
+								signed off by the appropriate overhead. Blank boxes are provided for
+								any additional unit requirements as needed (e.g., Safety Officer,
+								Agency Representative, etc.).
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="txt-bold mb-05">Logistics Section</div>
+							<div class="checkbox-wrapper">
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Supply Unit</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Communications Unit</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Facilities Unit</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Ground Support Unit</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Security Manager</label>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div>
+								<p class="mb-05">The Demobilization Unit Leader will enter an "X" in the box to the left of
+									those Units requiring the resource to check out.</p>
+								<p> Identified Unit Leaders or other overhead are to sign the appropriate
+									line to indicate release.</p>
+
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- =========PAGE BREAKER============= -->
+		<div class="page-breaker"></div>
+
+		<div class="instruction-table__wrapper">
+			<table class="instruction-table break-word">
+				<tbody>
+					<tr>
+						<th class="cell bg-grey  instruction-table__first-col">
+							<div class="txt-bold txt-white tablet-hiden">Block Number</div>
+							<div class="txt-bold txt-white tablet-visible">№</div>
+						</th>
+						<th class="cell bg-grey  instruction-table__second-col ">
+							<div class="txt-bold txt-white">Block Title</div>
+						</th>
+						<th class="cell bg-grey ">
+							<div class="txt-bold txt-white">Instructions</div>
+						</th>
+					</tr>
+
+					<tr>
+						<td class="txt-center " rowspan="3">
+							<div class="txt-bold">6</div>
+						</td>
+						<td>
+							<div class="txt-bold mb-05">Finance/Administration
+								Section</div>
+							<div class="checkbox-wrapper">
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Time Unit</label>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div>
+								<p class="mb-05">The Demobilization Unit Leader will enter an "X" in the box to the left of
+									those Units requiring the resource to check out.
+								</p>
+								<p>Identified Unit Leaders or other overhead are to sign the appropriate line
+									to indicate release.</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="txt-bold mb-1">Other Section/Staff</div>
+							<div class="ch-box-and-input">
+								<input class="check-box_left" type="checkbox" disabled>
+								<label></label>
+							</div>
+						</td>
+						<td>
+							<div>
+								<p class="mb-05">The Demobilization Unit Leader will enter an "X" in the box to the left of
+									those Units requiring the resource to check out.</p>
+								<p>Identified Unit Leaders or other overhead are to sign the appropriate line
+									to indicate release.</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="txt-bold mb-05">Planning Section</div>
+							<div class="checkbox-wrapper">
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label>Documentation Leader</label>
+								</div>
+								<div>
+									<input class="check-box_left" type="checkbox" disabled>
+									<label> Demobilization Leader</label>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div>
+								<p class="mb-05">The Demobilization Unit Leader will enter an "X" in the box to the left of
+									those Units requiring the resource to check out.</p>
+								<p>Identified Unit Leaders or other overhead are to sign the appropriate line
+									to indicate release.</p>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="txt-center ">
+							<div class="txt-bold">7</div>
+						</td>
+						<td>
+							<div class="txt-bold">Remarks</div>
+						</td>
+						<td>
+							<div>
+								Enter any additional information pertaining to demobilization or release
+								(e.g., transportation needed, destination, etc.). This section may also be
+								used to indicate if a performance rating has been completed as required
+								by the discipline or jurisdiction.
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="txt-center" rowspan="10">
+							<div class="txt-bold">8</div>
+						</td>
+						<td>
+							<div class="txt-bold">Travel Information</div>
+						</td>
+						<td>
+							<div>Enter the following travel information:
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Room Overnight</div>
+						</td>
+						<td>
+							<div>Use this section to enter whether or not the resource or personnel will be
+								staying in a hotel overnight prior to returning home base and/or unit.</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Estimated Time of Departure</div>
+						</td>
+						<td>
+							<div>Use this section to enter the resource’s or personnel’s estimated time of
+								departure (using the 24-hour clock).</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Actual Release Date/Time</div>
+						</td>
+						<td>
+							<div>Use this section to enter the resource’s or personnel’s actual release date
+								(month/day/year) and time (using the 24-hour clock).</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Destination</div>
+						</td>
+						<td>
+							<div>Use this section to enter the resource’s or personnel’s destination.</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Estimated Time of Arrival</div>
+						</td>
+						<td>
+							<div>Use this section to enter the resource’s or personnel’s estimated time of
+								arrival (using the 24-hour clock) at the destination.</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Travel Method</div>
+						</td>
+						<td>
+							<div>Use this section to enter the resource’s or personnel’s travel method (e.g.,
+								POV, air, etc.).</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Contact Information While
+								Traveling</div>
+						</td>
+						<td>
+							<div>Use this section to enter the resource’s or personnel’s contact information
+								while traveling (e.g., cell phone, radio frequency, etc.).</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="mb-05"><span>Manifest</span>
+								<input type="radio" class="radio_left" disabled>
+								<label>Yes</label>
+								<input type="radio" class="radio_left" disabled>
+								<label>No</label>
+							</div>
+							<div>Number</div>
+
+						</td>
+						<td>
+							<div>Use this section to enter whether or not the resource or personnel has a
+								manifest. If they do, indicate the manifest number.</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Area/Agency/Region Notified</div>
+						</td>
+						<td>
+							<div>Use this section to enter the area, agency, and/or region that was notified
+								of the resource’s travel. List the name (first initial and last name) of the
+								individual notified and the date (month/day/year) he or she was notified.</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="txt-center" rowspan="5">
+							<div class="txt-bold">9</div>
+						</td>
+						<td>
+							<div class="txt-bold mb-05">Reassignment Information</div>
+							<div>
+								<input type="radio" class="radio_left" disabled>
+								<label>Yes</label>
+								<input type="radio" class="radio_left" disabled>
+								<label>No</label>
+							</div>
+
+						</td>
+						<td>
+							<div>
+								Enter whether or not the resource or personnel was reassigned to another
+								incident. If the resource or personnel was reassigned, complete the
+								section below.
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Incident Name</div>
+						</td>
+						<td>
+							<div>
+								Use this section to enter the name of the new incident to which the
+								resource was reassigned.
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Incident Number</div>
+						</td>
+						<td>
+							<div>
+								Use this section to enter the number of the new incident to which the
+								resource was reassigned.
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Location</div>
+						</td>
+						<td>
+							<div>
+								Use this section to enter the location (city and State) of the new incident to
+								which the resource was reassigned.
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div>Order Request Number</div>
+						</td>
+						<td>
+							<div>
+								Use this section to enter the new order request number assigned to the
+								resource or personnel.
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- =========PAGE BREAKER============= -->
+		<div class="page-breaker"></div>
+
+		<div class="instruction-table__wrapper">
+			<table class="instruction-table break-word">
+				<tbody>
+					<tr>
+						<th class="cell bg-grey  instruction-table__first-col">
+							<div class="txt-bold txt-white tablet-hiden">Block Number</div>
+							<div class="txt-bold txt-white tablet-visible">№</div>
+						</th>
+						<th class="cell bg-grey  instruction-table__second-col ">
+							<div class="txt-bold txt-white">Block Title</div>
+						</th>
+						<th class="cell bg-grey ">
+							<div class="txt-bold txt-white">Instructions</div>
+						</th>
+					</tr>
+
+					<tr>
+						<td class="txt-center">
+							<div class="txt-bold">10</div>
+						</td>
+						<td>
+							<div class="txt-bold mb-05">Prepared by</div>
+							<ul class="disc-list">
+								<li>Name </li>
+								<li>Position/Title</li>
+								<li>Signature</li>
+								<li>Date/Time</li>
+							</ul>
+						</td>
+						<td>
+							<div>Enter the name, ICS position, and signature of the person preparing the
+								form. Enter date (month/day/year) and time prepared (using the 24-hour
+								clock).
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

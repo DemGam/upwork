@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Accident-incident report form</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="subtile mb-10"><b>Sample form for your own use (not for reporting to WorkSafe).</b></div>
+		<div class="form-header">
+			<div class="title">ACCIDENT/INCIDENT REPORT FORM </div>
+			<div class="form-header__no">
+				<span>Record No:</span>
+				<input type="text" class=" input-underlined">
+			</div>
+		</div>
+		<div class="subtitle">Personal details</div>
+		<div class="underlined d-flex mb-10">
+			<span>Name:</span>
+			<input type="text">
+		</div>
+		<div class="underlined d-flex">
+			<span>Occupation:</span>
+			<input type="text">
+
+		</div>
+		<div class="details-row">
+			<div class="d-flex flex-auto">
+				<span>Section/Dept:</span>
+				<input type="text">
+			</div>
+			<div class="event__date">
+				<div class="txt-nowrap">Date of report:</div>
+				<input type="text" class="date-input" maxlength="2">
+				<span>/</span>
+				<input type="text" class="date-input" maxlength="2">
+				<span>/</span>
+				<input type="text" class="date-input" maxlength="2">
+			</div>
+		</div>
+
+		<div class="subtitle">Accident/incident details</div>
+		<div class="details-row details-row_col-on-mob">
+			<div class="d-flex flex-44">
+				<span>Date:</span>
+				<input type="text">
+			</div>
+			<div class="d-flex flex-auto">
+				<span>Time:</span>
+				<input type="text">
+			</div>
+			<div class="event__date">
+				<div class="txt-nowrap">Date reported:</div>
+				<input type="text" class="date-input" maxlength="2">
+				<span>/</span>
+				<input type="text" class="date-input" maxlength="2">
+				<span>/</span>
+				<input type="text" class="date-input" maxlength="2">
+			</div>
+		</div>
+		<div class="details-row">
+			<div class="d-flex flex-44">
+				<span>Location:</span>
+				<input type="text">
+			</div>
+			<div class="d-flex flex-auto">
+				<span>Witness:</span>
+				<input type="text">
+			</div>
+		</div>
+		<div class="d-flex underlined">
+			<span class="txt-nowrap">Reported to whom:</span>
+			<input type="text">
+		</div>
+		<div class="mb-5">
+			<b>Full accident/incident details – </b>
+			what happened, or in the case of a near miss, what could have happened
+		</div>
+		<div class="underlined" contenteditable="true"></div>
+
+		<div class="subtitle">Injury – Nature of Injury</div>
+
+		<div class="injury mb-10">
+			<div class="injury__checks">
+				<div class="injury__check checkbox">
+					<input id="injury-checks-contusion" type="checkbox" value="contusion" name="injury-checks">
+					<label for="injury-checks-contusion" class="checkbox__label">Contusion/crush</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-burn" type="checkbox" value="burn" name="injury-checks">
+					<label for="injury-checks-burn" class="checkbox__label">Burn</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-dislocation" type="checkbox" value="dislocation" name="injury-checks">
+					<label for="injury-checks-dislocation" class="checkbox__label">Dislocation</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-epilepsy" type="checkbox" value="epilepsy" name="injury-checks">
+					<label for="injury-checks-epilepsy" class="checkbox__label">Amputation</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-laceration" type="checkbox" value="laceration" name="injury-checks">
+					<label for="injury-checks-laceration" class="checkbox__label">Laceration/open wound</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-superficial-injury" type="checkbox" value="superficial-injury" name="injury-checks">
+					<label for="injury-checks-superficial-injury" class="checkbox__label">Superficial injury</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-foreign-body" type="checkbox" value="foreign-body" name="injury-checks">
+					<label for="injury-checks-foreign-body" class="checkbox__label">Foreign body</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-internal-injury" type="checkbox" value="internal-injury" name="injury-checks">
+					<label for="injury-checks-internal-injury" class="checkbox__label">Internal injury</label>
+				</div>
+
+				<div class="injury__check checkbox">
+					<input id="injury-checks-concussion" type="checkbox" value="concussion" name="injury-checks">
+					<label for="injury-checks-concussion" class="checkbox__label">Concussion</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-sprain" type="checkbox" value="sprain" name="injury-checks">
+					<label for="injury-checks-sprain" class="checkbox__label">Sprain/strain</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-fracture" type="checkbox" value="fracture" name="injury-checks">
+					<label for="injury-checks-fracture" class="checkbox__label">Fracture</label>
+				</div>
+				<div class="injury__check checkbox">
+					<input id="injury-checks-dermatitis" type="checkbox" value="dermatitis" name="injury-checks">
+					<label for="injury-checks-dermatitis" class="checkbox__label">Dermatitis</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="subtitle">Location of Injury</div>
+		<div class="location mb-10">
+			<div class="location__checks">
+				<div class="location__check checkbox">
+					<input id="location-checks-head" type="checkbox" value="head" name="location-checks">
+					<label for="location-checks-head" class="checkbox__label">Head/face</label>
+				</div>
+				<div class="location__check checkbox">
+					<input id="location-checks-eye" type="checkbox" value="eye" name="location-checks">
+					<label for="location-checks-eye" class="checkbox__label">Eye</label>
+				</div>
+				<div class="location__check checkbox">
+					<input id="location-checks-organs" type="checkbox" value="organs" name="location-checks">
+					<label for="location-checks-organs" class="checkbox__label">Internal organs</label>
+				</div>
+
+				<div class="location__check checkbox ">
+					<input id="location-checks-hand" type="checkbox" value="hand" name="location-checks">
+					<label for="location-checks-hand" class="checkbox__label">Hand/fingers</label>
+				</div>
+
+				<div class="location__check checkbox">
+					<input id="location-checks-arms" type="checkbox" value="arms" name="location-checks">
+					<label for="location-checks-arms" class="checkbox__label">Shoulder/arms</label>
+				</div>
+				<div class="location__check checkbox">
+					<input id="location-checks-trunk" type="checkbox" value="trunk" name="location-checks">
+					<label for="location-checks-trunk" class="checkbox__label">Trunk (other than back)</label>
+				</div>
+				<div class="location__check checkbox">
+					<input id="location-checks-hip" type="checkbox" value="hip" name="location-checks">
+					<label for="location-checks-hip" class="checkbox__label">Hip/leg</label>
+				</div>
+				<div class="location__check checkbox">
+					<input id="location-checks-foot" type="checkbox" value="foot" name="location-checks">
+					<label for="location-checks-foot" class="checkbox__label">Foot/toes</label>
+				</div>
+				<div class="location__check checkbox">
+					<input id="location-checks-back" type="checkbox" value="back" name="location-checks">
+					<label for="location-checks-back" class="checkbox__label">Back</label>
+				</div>
+				<div class="location__check checkbox">
+					<input id="location-checks-other" type="checkbox" value="other" name="location-checks">
+					<label for="location-checks-other" class="checkbox__label">Other (state)</label>
+				</div>
+			</div>
+		</div>
+		<div class="subtitle">Results of accident</div>
+		<div class="d-flex accident-results mb-10">
+			<div class="">
+				<span>Lost time injury</span>
+				<input id="lost-time-injury-checks-yes" type="radio" value="yes" name="lost-time-injury-checks">
+				<label for="lost-time-injury-checks-yes">Y /</label>
+				<input id="lost-time-injury-checks-no" type="radio" value="no" name="lost-time-injury-checks">
+				<label for="lost-time-injury-checks-no">N</label>
+			</div>
+
+			<div class="d-flex ">
+				<span class="txt-nowrap"> No. of days:</span>
+				<input type="number" class="input-underlined input-small">
+				<span>days</span>
+			</div>
+
+			<div class="">
+				<span>Workers’ compensation </span>
+				<input id="workers-compensation-checks-yes" type="radio" value="yes" name="workers-compensation">
+				<label for="workers-compensation-checks-yes">Y /</label>
+				<input id="workers-compensation-checks-no" type="radio" value="no" name="workers-compensation">
+				<label for="workers-compensation-checks-no">N</label>
+			</div>
+		</div>
+
+		<div class="d-flex accident-results mb-10">
+			<div class="">Treatment received:</div>
+			<div class="">
+				<input id="treatment-checks-first-aid" type="checkbox" value="first-aid" name="treatment-checks">
+				<label for="treatment-checks-first-aid" class="">First aid</label>
+			</div>
+			<div class="">
+				<input id="treatment-checks-doctor" type="checkbox" value="doctor" name="treatment-checks-doctor">
+				<label for="treatment-checks-doctor" class="">Doctor</label>
+			</div>
+			<div class="">
+				<input id="treatment-checks-hospital" type="checkbox" value="hospital" name="treatment-checks-hospital">
+				<label for="treatment-checks-hospital" class="">Hospital</label>
+			</div>
+		</div>
+
+		<div class="subtitle">
+			Damage to equipment/buildings/vehicles etc.
+		</div>
+		<div class="contenteditable-wrapper">
+			<span class="txt-nowrap">What was damaged?</span>
+			<div contenteditable="true"></div>
+		</div>
+		<div class="contenteditable-wrapper">
+			<span class="txt-nowrap">Extent of damage:</span>
+			<div contenteditable="true"></div>
+		</div>
+
+		<div class="subtitle">Contributing factors</div>
+		<div class="contenteditable-wrapper">
+			<span>What were the contributing factors (if any)?</span>
+			<!-- <span class="txt-nowrap">What were the contributing factors (if any)?</span> -->
+			<div contenteditable="true"></div>
+		</div>
+
+		<div class="subtitle">Corrective actions</div>
+		<div class="contenteditable-wrapper">
+			<span class="txt-nowrap">Immediate actions</span>
+			<div contenteditable="true"></div>
+		</div>
+
+		<div class="mb-5">What controls can be put in place to prevent this from happening again?</div>
+		<div class="underlined" contenteditable="true"></div>
+
+		<div class="contenteditable-wrapper">
+			<span class="txt-nowrap">Recommendations for action</span>
+			<div contenteditable="true"></div>
+		</div>
+
+		<div class="contenteditable-wrapper">
+			<span>Who is to implement these controls/corrective actions?</span>
+			<!-- <span class="txt-nowrap">Who is to implement these controls/corrective actions?</span> -->
+			<div contenteditable="true"></div>
+		</div>
+
+		<div class="underlined event__date">
+			<div class="txt-nowrap">Date by which action is to be taken:</div>
+			<input type="text" class="date-input" maxlength="2">
+			<span>/</span>
+			<input type="text" class="date-input" maxlength="2">
+			<span>/</span>
+			<input type="text" class="date-input" maxlength="2">
+		</div>
+
+
+		<div class="subtitle">Signatures</div>
+		<div class="details-row">
+			<div class="d-flex flex-33">
+				<span>Officer:</span>
+				<input type="text">
+			</div>
+			<div class="d-flex flex-auto">
+				<span class="txt-nowrap">HS Rep:</span>
+				<input type="text">
+			</div>
+			<div class="d-flex  flex-33">
+				<span>Manager:</span>
+				<input type="text">
+			</div>
+		</div>
+
+		<div class="details-row">
+			<div class="d-flex flex-33">
+				<span>Director:</span>
+				<input type="text">
+			</div>
+			<div class="d-flex flex-auto">
+				<span class="txt-nowrap">Investigating officer:</span>
+				<input type="text">
+			</div>
+		</div>
+
+		<div class="details-row">
+			<div class="d-flex flex-33">
+				<span class="txt-nowrap">Actions completed:</span>
+				<input type="text">
+			</div>
+			<div class="event__date flex-100">
+				<div>Date:</div>
+				<input type="text" class="date-input" maxlength="2">
+				<span>/</span>
+				<input type="text" class="date-input" maxlength="2">
+				<span>/</span>
+				<input type="text" class="date-input" maxlength="2">
+			</div>
+			<div class="d-flex flex-33">
+				<span>Manager:</span>
+				<input type="text">
+			</div>
+		</div>
+	</div>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
